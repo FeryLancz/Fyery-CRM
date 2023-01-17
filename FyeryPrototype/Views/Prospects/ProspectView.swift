@@ -10,6 +10,7 @@ import SwiftUI
 struct ProspectView: View {
     @EnvironmentObject var user: SalesPartner
     @State private var addProspectShowing = false
+    @State private var newAddProspectShowing = false
     
     var body: some View {
         NavigationView {
@@ -28,9 +29,17 @@ struct ProspectView: View {
                         Image(systemName: "plus")
                     }
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("+test") {
+                        newAddProspectShowing.toggle()
+                    }
+                }
             }
             .sheet(isPresented: $addProspectShowing) {
                 AddProspectView()
+            }
+            .sheet(isPresented: $newAddProspectShowing) {
+                AddProspectNew()
             }
         }
     }
