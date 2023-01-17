@@ -10,7 +10,7 @@ import SwiftUI
 extension View {
     func applyBackground() -> some View {
         ZStack {
-            Color.backgroundColor
+            Color.background
                 .ignoresSafeArea()
             self
         }
