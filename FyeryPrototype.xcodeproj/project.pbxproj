@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370FB3D6295B05D100EBB76C /* UserTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB3D5295B05D100EBB76C /* UserTestData.swift */; };
+		3729E0FF295CE8710046526B /* SplitTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3729E0FE295CE8710046526B /* SplitTextView.swift */; };
+		3729E101295CEA5D0046526B /* ConfirmationCallOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3729E100295CEA5D0046526B /* ConfirmationCallOutcomeView.swift */; };
+		3729E103295CF0CF0046526B /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3729E102295CF0CF0046526B /* EventDetailView.swift */; };
+		373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */; };
+		373AEBB929634754003B7FB6 /* AddProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB829634754003B7FB6 /* AddProposalView.swift */; };
+		377D68D52959C49600F26670 /* FyeryPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68D42959C49600F26670 /* FyeryPrototypeApp.swift */; };
+		377D68D72959C49600F26670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68D62959C49600F26670 /* ContentView.swift */; };
+		377D68D92959C49700F26670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D68D82959C49700F26670 /* Assets.xcassets */; };
+		377D68DC2959C49700F26670 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D68DB2959C49700F26670 /* Preview Assets.xcassets */; };
+		377D68E42959C4D000F26670 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E32959C4D000F26670 /* DashboardView.swift */; };
+		377D68E62959C53200F26670 /* ProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E52959C53200F26670 /* ProspectView.swift */; };
+		377D68E82959C53800F26670 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E72959C53800F26670 /* ClientView.swift */; };
+		377D68EA2959C57300F26670 /* SalesPartnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E92959C57300F26670 /* SalesPartnerView.swift */; };
+		377D68EC2959C57A00F26670 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68EB2959C57A00F26670 /* AccountView.swift */; };
+		377D68F42959DA0400F26670 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68F32959DA0400F26670 /* Prospect.swift */; };
+		377D68F62959DD7B00F26670 /* AddProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68F52959DD7B00F26670 /* AddProspectView.swift */; };
+		377D68F82959E21200F26670 /* ProspectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68F72959E21200F26670 /* ProspectDetailView.swift */; };
+		377D68FA2959E2B100F26670 /* CallOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68F92959E2B100F26670 /* CallOutcomeView.swift */; };
+		377D68FC2959E70F00F26670 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FB2959E70F00F26670 /* Appointment.swift */; };
+		377D68FE2959E88900F26670 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FD2959E88900F26670 /* Event.swift */; };
+		377D69002959E9FB00F26670 /* SalesPartner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FF2959E9FB00F26670 /* SalesPartner.swift */; };
+		377D69022959EA5500F26670 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69012959EA5500F26670 /* Client.swift */; };
+		377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69032959EADF00F26670 /* PersonProtocol.swift */; };
+		377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69052959EF4200F26670 /* AppointmentsView.swift */; };
+		377D69082959F01500F26670 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69072959F01500F26670 /* CallsView.swift */; };
+		378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378991582961B5320002735C /* AppointmentOutcomeView.swift */; };
+		3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1BE29609F7500E15ACD /* ConceptsView.swift */; };
+		3789F1CA2961A6C100E15ACD /* StandardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1C92961A6C100E15ACD /* StandardEvents.swift */; };
+		37A245392976AFF7001523EF /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A245382976AFF7001523EF /* ViewExtension.swift */; };
+		37A2453B2976B0CF001523EF /* UnitsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A2453A2976B0CF001523EF /* UnitsWidget.swift */; };
+		37AB7364295F297900544554 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB7363295F297900544554 /* ViewExtensions.swift */; };
+		37AB7366295F395000544554 /* PastAppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB7365295F395000544554 /* PastAppointmentsView.swift */; };
+		37AB7368295F3C8F00544554 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB7367295F3C8F00544554 /* DateExtension.swift */; };
+		37AB736C295F6E1800544554 /* BlankInitializerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB736B295F6E1800544554 /* BlankInitializerExtensions.swift */; };
+		37AB73722960211F00544554 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB73712960211F00544554 /* Proposal.swift */; };
+		37AB73742960216E00544554 /* Concept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB73732960216E00544554 /* Concept.swift */; };
+		37D7E43C295A5BB500EBD9B9 /* AppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D7E43B295A5BB500EBD9B9 /* AppointmentDetailView.swift */; };
+		37F566452972EC87000A455B /* DashboardGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566442972EC87000A455B /* DashboardGreetingView.swift */; };
+		37F566472972EFAB000A455B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566462972EFAB000A455B /* ColorExtension.swift */; };
+		37F8739B29638136006C7C7E /* ConceptClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F8739A29638136006C7C7E /* ConceptClassificationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		370FB3D5295B05D100EBB76C /* UserTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTestData.swift; sourceTree = "<group>"; };
+		3729E0FE295CE8710046526B /* SplitTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitTextView.swift; sourceTree = "<group>"; };
+		3729E100295CEA5D0046526B /* ConfirmationCallOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationCallOutcomeView.swift; sourceTree = "<group>"; };
+		3729E102295CF0CF0046526B /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptDetailView.swift; sourceTree = "<group>"; };
+		373AEBB829634754003B7FB6 /* AddProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProposalView.swift; sourceTree = "<group>"; };
+		377D68D12959C49600F26670 /* FyeryPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyeryPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		377D68D42959C49600F26670 /* FyeryPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryPrototypeApp.swift; sourceTree = "<group>"; };
+		377D68D62959C49600F26670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		377D68D82959C49700F26670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		377D68DB2959C49700F26670 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		377D68E32959C4D000F26670 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		377D68E52959C53200F26670 /* ProspectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectView.swift; sourceTree = "<group>"; };
+		377D68E72959C53800F26670 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
+		377D68E92959C57300F26670 /* SalesPartnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPartnerView.swift; sourceTree = "<group>"; };
+		377D68EB2959C57A00F26670 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		377D68F32959DA0400F26670 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		377D68F52959DD7B00F26670 /* AddProspectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProspectView.swift; sourceTree = "<group>"; };
+		377D68F72959E21200F26670 /* ProspectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectDetailView.swift; sourceTree = "<group>"; };
+		377D68F92959E2B100F26670 /* CallOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOutcomeView.swift; sourceTree = "<group>"; };
+		377D68FB2959E70F00F26670 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		377D68FD2959E88900F26670 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		377D68FF2959E9FB00F26670 /* SalesPartner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPartner.swift; sourceTree = "<group>"; };
+		377D69012959EA5500F26670 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		377D69032959EADF00F26670 /* PersonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProtocol.swift; sourceTree = "<group>"; };
+		377D69052959EF4200F26670 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
+		377D69072959F01500F26670 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
+		378991582961B5320002735C /* AppointmentOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentOutcomeView.swift; sourceTree = "<group>"; };
+		3789F1BE29609F7500E15ACD /* ConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsView.swift; sourceTree = "<group>"; };
+		3789F1C92961A6C100E15ACD /* StandardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardEvents.swift; sourceTree = "<group>"; };
+		37A245382976AFF7001523EF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		37A2453A2976B0CF001523EF /* UnitsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsWidget.swift; sourceTree = "<group>"; };
+		37AB7363295F297900544554 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		37AB7365295F395000544554 /* PastAppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastAppointmentsView.swift; sourceTree = "<group>"; };
+		37AB7367295F3C8F00544554 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		37AB736B295F6E1800544554 /* BlankInitializerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankInitializerExtensions.swift; sourceTree = "<group>"; };
+		37AB73712960211F00544554 /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
+		37AB73732960216E00544554 /* Concept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept.swift; sourceTree = "<group>"; };
+		37D7E43B295A5BB500EBD9B9 /* AppointmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailView.swift; sourceTree = "<group>"; };
+		37F566442972EC87000A455B /* DashboardGreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardGreetingView.swift; sourceTree = "<group>"; };
+		37F566462972EFAB000A455B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		37F8739A29638136006C7C7E /* ConceptClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptClassificationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		377D68CE2959C49600F26670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		377D68C82959C49600F26670 = {
+			isa = PBXGroup;
+			children = (
+				377D68D32959C49600F26670 /* FyeryPrototype */,
+				377D68D22959C49600F26670 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		377D68D22959C49600F26670 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				377D68D12959C49600F26670 /* FyeryPrototype.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		377D68D32959C49600F26670 /* FyeryPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				377D68D42959C49600F26670 /* FyeryPrototypeApp.swift */,
+				37A245372976AFD4001523EF /* Core */,
+				377D68E22959C4BF00F26670 /* Views */,
+				377D68F22959D9F800F26670 /* Model */,
+				3789F1C42960A2F600E15ACD /* Utility */,
+				377D68D82959C49700F26670 /* Assets.xcassets */,
+				377D68DA2959C49700F26670 /* Preview Content */,
+			);
+			path = FyeryPrototype;
+			sourceTree = "<group>";
+		};
+		377D68DA2959C49700F26670 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				377D68DB2959C49700F26670 /* Preview Assets.xcassets */,
+				370FB3D5295B05D100EBB76C /* UserTestData.swift */,
+				37AB736B295F6E1800544554 /* BlankInitializerExtensions.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		377D68E22959C4BF00F26670 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				377D68D62959C49600F26670 /* ContentView.swift */,
+				377D68ED2959D99F00F26670 /* Dashboard */,
+				377D68EE2959D9A700F26670 /* Prospects */,
+				377D68EF2959D9AC00F26670 /* Clients */,
+				377D68F02959D9B200F26670 /* SalesPartners */,
+				377D68F12959D9B800F26670 /* Account */,
+				37AB7362295F296700544554 /* General */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		377D68ED2959D99F00F26670 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				377D68E32959C4D000F26670 /* DashboardView.swift */,
+				37F566442972EC87000A455B /* DashboardGreetingView.swift */,
+				37A2453A2976B0CF001523EF /* UnitsWidget.swift */,
+				377D69072959F01500F26670 /* CallsView.swift */,
+				3729E100295CEA5D0046526B /* ConfirmationCallOutcomeView.swift */,
+				3789F1C62960A33E00E15ACD /* Appointments */,
+				3789F1BE29609F7500E15ACD /* ConceptsView.swift */,
+				373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */,
+				373AEBB829634754003B7FB6 /* AddProposalView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		377D68EE2959D9A700F26670 /* Prospects */ = {
+			isa = PBXGroup;
+			children = (
+				377D68E52959C53200F26670 /* ProspectView.swift */,
+				377D68F52959DD7B00F26670 /* AddProspectView.swift */,
+				377D68F72959E21200F26670 /* ProspectDetailView.swift */,
+				377D68F92959E2B100F26670 /* CallOutcomeView.swift */,
+				3729E102295CF0CF0046526B /* EventDetailView.swift */,
+			);
+			path = Prospects;
+			sourceTree = "<group>";
+		};
+		377D68EF2959D9AC00F26670 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				377D68E72959C53800F26670 /* ClientView.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		377D68F02959D9B200F26670 /* SalesPartners */ = {
+			isa = PBXGroup;
+			children = (
+				377D68E92959C57300F26670 /* SalesPartnerView.swift */,
+			);
+			path = SalesPartners;
+			sourceTree = "<group>";
+		};
+		377D68F12959D9B800F26670 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				377D68EB2959C57A00F26670 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		377D68F22959D9F800F26670 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				377D68FD2959E88900F26670 /* Event.swift */,
+				3789F1C92961A6C100E15ACD /* StandardEvents.swift */,
+				3789F1C32960A2A400E15ACD /* People */,
+				3789F1C22960A29700E15ACD /* Appointments */,
+				3789F1C52960A31C00E15ACD /* Business */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3789F1C22960A29700E15ACD /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				377D68FB2959E70F00F26670 /* Appointment.swift */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		3789F1C32960A2A400E15ACD /* People */ = {
+			isa = PBXGroup;
+			children = (
+				377D69032959EADF00F26670 /* PersonProtocol.swift */,
+				377D68FF2959E9FB00F26670 /* SalesPartner.swift */,
+				377D68F32959DA0400F26670 /* Prospect.swift */,
+				377D69012959EA5500F26670 /* Client.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		3789F1C42960A2F600E15ACD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				37AB7367295F3C8F00544554 /* DateExtension.swift */,
+				37F566462972EFAB000A455B /* ColorExtension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3789F1C52960A31C00E15ACD /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				37AB73732960216E00544554 /* Concept.swift */,
+				37AB73712960211F00544554 /* Proposal.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		3789F1C62960A33E00E15ACD /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				377D69052959EF4200F26670 /* AppointmentsView.swift */,
+				37AB7365295F395000544554 /* PastAppointmentsView.swift */,
+				37D7E43B295A5BB500EBD9B9 /* AppointmentDetailView.swift */,
+				378991582961B5320002735C /* AppointmentOutcomeView.swift */,
+				37F8739A29638136006C7C7E /* ConceptClassificationView.swift */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		37A245372976AFD4001523EF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				37A245382976AFF7001523EF /* ViewExtension.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		37AB7362295F296700544554 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3729E0FE295CE8710046526B /* SplitTextView.swift */,
+				37AB7363295F297900544554 /* ViewExtensions.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		377D68D02959C49600F26670 /* FyeryPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 377D68DF2959C49700F26670 /* Build configuration list for PBXNativeTarget "FyeryPrototype" */;
+			buildPhases = (
+				377D68CD2959C49600F26670 /* Sources */,
+				377D68CE2959C49600F26670 /* Frameworks */,
+				377D68CF2959C49600F26670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FyeryPrototype;
+			productName = FyeryPrototype;
+			productReference = 377D68D12959C49600F26670 /* FyeryPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		377D68C92959C49600F26670 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					377D68D02959C49600F26670 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 377D68CC2959C49600F26670 /* Build configuration list for PBXProject "FyeryPrototype" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 377D68C82959C49600F26670;
+			productRefGroup = 377D68D22959C49600F26670 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				377D68D02959C49600F26670 /* FyeryPrototype */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		377D68CF2959C49600F26670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377D68DC2959C49700F26670 /* Preview Assets.xcassets in Resources */,
+				377D68D92959C49700F26670 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		377D68CD2959C49600F26670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */,
+				377D68E62959C53200F26670 /* ProspectView.swift in Sources */,
+				377D68F42959DA0400F26670 /* Prospect.swift in Sources */,
+				377D68F62959DD7B00F26670 /* AddProspectView.swift in Sources */,
+				3789F1CA2961A6C100E15ACD /* StandardEvents.swift in Sources */,
+				377D68FC2959E70F00F26670 /* Appointment.swift in Sources */,
+				37AB7368295F3C8F00544554 /* DateExtension.swift in Sources */,
+				377D68FA2959E2B100F26670 /* CallOutcomeView.swift in Sources */,
+				377D68E82959C53800F26670 /* ClientView.swift in Sources */,
+				377D68EA2959C57300F26670 /* SalesPartnerView.swift in Sources */,
+				37AB73722960211F00544554 /* Proposal.swift in Sources */,
+				373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */,
+				377D68D72959C49600F26670 /* ContentView.swift in Sources */,
+				377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */,
+				37AB7364295F297900544554 /* ViewExtensions.swift in Sources */,
+				377D69082959F01500F26670 /* CallsView.swift in Sources */,
+				37F8739B29638136006C7C7E /* ConceptClassificationView.swift in Sources */,
+				377D69022959EA5500F26670 /* Client.swift in Sources */,
+				377D68EC2959C57A00F26670 /* AccountView.swift in Sources */,
+				3729E0FF295CE8710046526B /* SplitTextView.swift in Sources */,
+				37A2453B2976B0CF001523EF /* UnitsWidget.swift in Sources */,
+				377D68E42959C4D000F26670 /* DashboardView.swift in Sources */,
+				377D68D52959C49600F26670 /* FyeryPrototypeApp.swift in Sources */,
+				377D68F82959E21200F26670 /* ProspectDetailView.swift in Sources */,
+				378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */,
+				37AB7366295F395000544554 /* PastAppointmentsView.swift in Sources */,
+				377D68FE2959E88900F26670 /* Event.swift in Sources */,
+				3729E103295CF0CF0046526B /* EventDetailView.swift in Sources */,
+				3729E101295CEA5D0046526B /* ConfirmationCallOutcomeView.swift in Sources */,
+				37D7E43C295A5BB500EBD9B9 /* AppointmentDetailView.swift in Sources */,
+				3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */,
+				37F566452972EC87000A455B /* DashboardGreetingView.swift in Sources */,
+				370FB3D6295B05D100EBB76C /* UserTestData.swift in Sources */,
+				37F566472972EFAB000A455B /* ColorExtension.swift in Sources */,
+				37AB736C295F6E1800544554 /* BlankInitializerExtensions.swift in Sources */,
+				37A245392976AFF7001523EF /* ViewExtension.swift in Sources */,
+				37AB73742960216E00544554 /* Concept.swift in Sources */,
+				373AEBB929634754003B7FB6 /* AddProposalView.swift in Sources */,
+				377D69002959E9FB00F26670 /* SalesPartner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		377D68DD2959C49700F26670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		377D68DE2959C49700F26670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		377D68E02959C49700F26670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FyeryPrototype/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9KFEVE553;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fyery;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancz.FyeryPrototype;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		377D68E12959C49700F26670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FyeryPrototype/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9KFEVE553;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fyery;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lancz.FyeryPrototype;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		377D68CC2959C49600F26670 /* Build configuration list for PBXProject "FyeryPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377D68DD2959C49700F26670 /* Debug */,
+				377D68DE2959C49700F26670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		377D68DF2959C49700F26670 /* Build configuration list for PBXNativeTarget "FyeryPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				377D68E02959C49700F26670 /* Debug */,
+				377D68E12959C49700F26670 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 377D68C92959C49600F26670 /* Project object */;
+}
