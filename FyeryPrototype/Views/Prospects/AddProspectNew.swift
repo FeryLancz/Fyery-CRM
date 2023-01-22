@@ -8,43 +8,47 @@
 import SwiftUI
 
 struct AddProspectNew: View {
+    @Environment(\.dismiss) var dismiss
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var phoneNumber = ""
     
     var body: some View {
         VStack {
-            AddProspectHeaderView()
+            AddProspectHeaderView {
+                dismiss()
+            }
             ScrollView(.vertical) {
-                VStack {
+                VStack(spacing: 10) {
                     HStack {
-                        Text("Form 1".uppercased())
+                        Text("Personal Information".uppercased())
                             .foregroundColor(.main)
                         Spacer()
                     }
-                    FormInput(title: "First Name", text: $firstName)
-                    FormInput(title: "Last Name", text: $lastName)
-                    FormInput(title: "Phone Number", text: $phoneNumber)
-                }
-                HStack {
-                    Text("Form 2".uppercased())
-                        .foregroundColor(.main)
-                    Spacer()
-                }
-                VStack(spacing: 10) {
                     FormInput2(title: "First Name", input: $firstName)
                     FormInput2(title: "Last Name", input: $lastName)
                     FormInput2(title: "Phone Number", input: $phoneNumber)
                 }
+                .padding()
+                .background {
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(.background)
+                        .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 0)
+                        //.shadow(color: .gray.opacity(0.3), radius: 4, x: -6, y: -6)
+                }
+                .padding(15)
             }
             .padding(.horizontal)
         }
+        .applyBackground()
     }
 }
 
 struct FormInput2: View {
+    
     var title: String
     @Binding var input: String
+    
     
     var body: some View {
         ZStack {
@@ -100,6 +104,7 @@ struct FormInput: View {
 }
 
 struct AddProspectHeaderView: View {
+    var action: () -> Void
     var body: some View {
         HStack {
             Image(systemName: "person.badge.plus")
@@ -116,7 +121,7 @@ struct AddProspectHeaderView: View {
                 .bold()
             Spacer()
             Button {
-                
+                action()
             } label: {
                 Image(systemName: "checkmark.circle.fill")
                     .foregroundColor(.green)
