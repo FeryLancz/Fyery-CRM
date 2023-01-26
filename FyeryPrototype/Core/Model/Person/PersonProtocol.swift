@@ -17,3 +17,15 @@ protocol Person: AnyObject {
     var isCustomer: Bool { get set }
     func addEvent(_ event: Event)
 }
+
+extension Person {
+    var fullName: String {
+        firstName + " " + lastName
+    }
+    
+    func addEvent(_ event: Event) {
+        events.append(event)
+        events.sort(by: <)
+    }
+}
+

@@ -13,24 +13,6 @@
 		3729E103295CF0CF0046526B /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3729E102295CF0CF0046526B /* EventDetailView.swift */; };
 		373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */; };
 		373AEBB929634754003B7FB6 /* AddProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB829634754003B7FB6 /* AddProposalView.swift */; };
-		376557D9297C21DB00B8F98E /* FyeryTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376557D8297C21DB00B8F98E /* FyeryTVApp.swift */; };
-		376557DB297C21DB00B8F98E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376557DA297C21DB00B8F98E /* ContentView.swift */; };
-		376557DD297C21DC00B8F98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376557DC297C21DC00B8F98E /* Assets.xcassets */; };
-		376557E0297C21DC00B8F98E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376557DF297C21DC00B8F98E /* Preview Assets.xcassets */; };
-		376557E4297C220C00B8F98E /* DashboardGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566442972EC87000A455B /* DashboardGreetingView.swift */; };
-		376557E5297C222300B8F98E /* SalesPartner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FF2959E9FB00F26670 /* SalesPartner.swift */; };
-		376557E6297C222800B8F98E /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68F32959DA0400F26670 /* Prospect.swift */; };
-		376557E7297C223100B8F98E /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69032959EADF00F26670 /* PersonProtocol.swift */; };
-		376557E8297C223800B8F98E /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FB2959E70F00F26670 /* Appointment.swift */; };
-		376557E9297C223C00B8F98E /* Concept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB73732960216E00544554 /* Concept.swift */; };
-		376557EA297C223F00B8F98E /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB73712960211F00544554 /* Proposal.swift */; };
-		376557EB297C224100B8F98E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FD2959E88900F26670 /* Event.swift */; };
-		376557EC297C225600B8F98E /* BlankInitializerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB736B295F6E1800544554 /* BlankInitializerExtensions.swift */; };
-		376557ED297C225900B8F98E /* UserTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FB3D5295B05D100EBB76C /* UserTestData.swift */; };
-		376557EE297C226400B8F98E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AB7367295F3C8F00544554 /* DateExtension.swift */; };
-		376557EF297C226700B8F98E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566462972EFAB000A455B /* ColorExtension.swift */; };
-		376557F0297C227200B8F98E /* StandardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1C92961A6C100E15ACD /* StandardEvents.swift */; };
-		376557F1297C227700B8F98E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69012959EA5500F26670 /* Client.swift */; };
 		377D68D52959C49600F26670 /* FyeryPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68D42959C49600F26670 /* FyeryPrototypeApp.swift */; };
 		377D68D72959C49600F26670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68D62959C49600F26670 /* ContentView.swift */; };
 		377D68D92959C49700F26670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D68D82959C49700F26670 /* Assets.xcassets */; };
@@ -51,6 +33,11 @@
 		377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69032959EADF00F26670 /* PersonProtocol.swift */; };
 		377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69052959EF4200F26670 /* AppointmentsView.swift */; };
 		377D69082959F01500F26670 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69072959F01500F26670 /* CallsView.swift */; };
+		37888EFF2982AD4E004FFA09 /* MaritalStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888EFE2982AD4E004FFA09 /* MaritalStatus.swift */; };
+		37888F012982ADDC004FFA09 /* ContactType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F002982ADDC004FFA09 /* ContactType.swift */; };
+		37888F032982AEA5004FFA09 /* PersonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F022982AEA5004FFA09 /* PersonType.swift */; };
+		37888F062982B496004FFA09 /* ProspectEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F052982B496004FFA09 /* ProspectEquatable.swift */; };
+		37888F082982B4CA004FFA09 /* ProspectHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F072982B4CA004FFA09 /* ProspectHashable.swift */; };
 		378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378991582961B5320002735C /* AppointmentOutcomeView.swift */; };
 		3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1BE29609F7500E15ACD /* ConceptsView.swift */; };
 		3789F1CA2961A6C100E15ACD /* StandardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1C92961A6C100E15ACD /* StandardEvents.swift */; };
@@ -76,11 +63,6 @@
 		3729E102295CF0CF0046526B /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptDetailView.swift; sourceTree = "<group>"; };
 		373AEBB829634754003B7FB6 /* AddProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProposalView.swift; sourceTree = "<group>"; };
-		376557D6297C21DB00B8F98E /* FyeryTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyeryTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		376557D8297C21DB00B8F98E /* FyeryTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryTVApp.swift; sourceTree = "<group>"; };
-		376557DA297C21DB00B8F98E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		376557DC297C21DC00B8F98E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		376557DF297C21DC00B8F98E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		377D68D12959C49600F26670 /* FyeryPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyeryPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377D68D42959C49600F26670 /* FyeryPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryPrototypeApp.swift; sourceTree = "<group>"; };
 		377D68D62959C49600F26670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +84,11 @@
 		377D69032959EADF00F26670 /* PersonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProtocol.swift; sourceTree = "<group>"; };
 		377D69052959EF4200F26670 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
 		377D69072959F01500F26670 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
+		37888EFE2982AD4E004FFA09 /* MaritalStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritalStatus.swift; sourceTree = "<group>"; };
+		37888F002982ADDC004FFA09 /* ContactType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactType.swift; sourceTree = "<group>"; };
+		37888F022982AEA5004FFA09 /* PersonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonType.swift; sourceTree = "<group>"; };
+		37888F052982B496004FFA09 /* ProspectEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectEquatable.swift; sourceTree = "<group>"; };
+		37888F072982B4CA004FFA09 /* ProspectHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectHashable.swift; sourceTree = "<group>"; };
 		378991582961B5320002735C /* AppointmentOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentOutcomeView.swift; sourceTree = "<group>"; };
 		3789F1BE29609F7500E15ACD /* ConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsView.swift; sourceTree = "<group>"; };
 		3789F1C92961A6C100E15ACD /* StandardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardEvents.swift; sourceTree = "<group>"; };
@@ -121,13 +108,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		376557D3297C21DB00B8F98E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		377D68CE2959C49600F26670 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,30 +118,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		376557D7297C21DB00B8F98E /* FyeryTV */ = {
-			isa = PBXGroup;
-			children = (
-				376557D8297C21DB00B8F98E /* FyeryTVApp.swift */,
-				376557DA297C21DB00B8F98E /* ContentView.swift */,
-				376557DC297C21DC00B8F98E /* Assets.xcassets */,
-				376557DE297C21DC00B8F98E /* Preview Content */,
-			);
-			path = FyeryTV;
-			sourceTree = "<group>";
-		};
-		376557DE297C21DC00B8F98E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				376557DF297C21DC00B8F98E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		377D68C82959C49600F26670 = {
 			isa = PBXGroup;
 			children = (
 				377D68D32959C49600F26670 /* FyeryPrototype */,
-				376557D7297C21DB00B8F98E /* FyeryTV */,
 				377D68D22959C49600F26670 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				377D68D12959C49600F26670 /* FyeryPrototype.app */,
-				376557D6297C21DB00B8F98E /* FyeryTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,7 +140,6 @@
 				377D68D42959C49600F26670 /* FyeryPrototypeApp.swift */,
 				37A245372976AFD4001523EF /* Core */,
 				377D68E22959C4BF00F26670 /* Views */,
-				377D68F22959D9F800F26670 /* Model */,
 				3789F1C42960A2F600E15ACD /* Utility */,
 				377D68D82959C49700F26670 /* Assets.xcassets */,
 				377D68DA2959C49700F26670 /* Preview Content */,
@@ -269,29 +227,66 @@
 		377D68F22959D9F800F26670 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				377D68FD2959E88900F26670 /* Event.swift */,
-				3789F1C92961A6C100E15ACD /* StandardEvents.swift */,
+				37888EFD2982AD43004FFA09 /* Person */,
+				37888EFC2982AD04004FFA09 /* Prospect */,
+				37888EFB2982ACF2004FFA09 /* SalesPartner */,
+				37888F042982AF02004FFA09 /* Event */,
 				3789F1C32960A2A400E15ACD /* People */,
-				3789F1C22960A29700E15ACD /* Appointments */,
+				3789F1C22960A29700E15ACD /* Appointment */,
 				3789F1C52960A31C00E15ACD /* Business */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3789F1C22960A29700E15ACD /* Appointments */ = {
+		37888EFB2982ACF2004FFA09 /* SalesPartner */ = {
+			isa = PBXGroup;
+			children = (
+				377D68FF2959E9FB00F26670 /* SalesPartner.swift */,
+			);
+			path = SalesPartner;
+			sourceTree = "<group>";
+		};
+		37888EFC2982AD04004FFA09 /* Prospect */ = {
+			isa = PBXGroup;
+			children = (
+				377D68F32959DA0400F26670 /* Prospect.swift */,
+				37888F052982B496004FFA09 /* ProspectEquatable.swift */,
+				37888F072982B4CA004FFA09 /* ProspectHashable.swift */,
+			);
+			path = Prospect;
+			sourceTree = "<group>";
+		};
+		37888EFD2982AD43004FFA09 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				377D69032959EADF00F26670 /* PersonProtocol.swift */,
+				37888EFE2982AD4E004FFA09 /* MaritalStatus.swift */,
+				37888F002982ADDC004FFA09 /* ContactType.swift */,
+				37888F022982AEA5004FFA09 /* PersonType.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		37888F042982AF02004FFA09 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				377D68FD2959E88900F26670 /* Event.swift */,
+				3789F1C92961A6C100E15ACD /* StandardEvents.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		3789F1C22960A29700E15ACD /* Appointment */ = {
 			isa = PBXGroup;
 			children = (
 				377D68FB2959E70F00F26670 /* Appointment.swift */,
 			);
-			path = Appointments;
+			path = Appointment;
 			sourceTree = "<group>";
 		};
 		3789F1C32960A2A400E15ACD /* People */ = {
 			isa = PBXGroup;
 			children = (
-				377D69032959EADF00F26670 /* PersonProtocol.swift */,
-				377D68FF2959E9FB00F26670 /* SalesPartner.swift */,
-				377D68F32959DA0400F26670 /* Prospect.swift */,
 				377D69012959EA5500F26670 /* Client.swift */,
 			);
 			path = People;
@@ -330,6 +325,7 @@
 		37A245372976AFD4001523EF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				377D68F22959D9F800F26670 /* Model */,
 				37A245382976AFF7001523EF /* ViewExtension.swift */,
 			);
 			path = Core;
@@ -347,23 +343,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		376557D5297C21DB00B8F98E /* FyeryTV */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 376557E3297C21DC00B8F98E /* Build configuration list for PBXNativeTarget "FyeryTV" */;
-			buildPhases = (
-				376557D2297C21DB00B8F98E /* Sources */,
-				376557D3297C21DB00B8F98E /* Frameworks */,
-				376557D4297C21DB00B8F98E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FyeryTV;
-			productName = FyeryTV;
-			productReference = 376557D6297C21DB00B8F98E /* FyeryTV.app */;
-			productType = "com.apple.product-type.application";
-		};
 		377D68D02959C49600F26670 /* FyeryPrototype */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 377D68DF2959C49700F26670 /* Build configuration list for PBXNativeTarget "FyeryPrototype" */;
@@ -391,9 +370,6 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					376557D5297C21DB00B8F98E = {
-						CreatedOnToolsVersion = 14.2;
-					};
 					377D68D02959C49600F26670 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -413,21 +389,11 @@
 			projectRoot = "";
 			targets = (
 				377D68D02959C49600F26670 /* FyeryPrototype */,
-				376557D5297C21DB00B8F98E /* FyeryTV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		376557D4297C21DB00B8F98E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				376557E0297C21DC00B8F98E /* Preview Assets.xcassets in Resources */,
-				376557DD297C21DC00B8F98E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		377D68CF2959C49600F26670 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,29 +406,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		376557D2297C21DB00B8F98E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				376557EC297C225600B8F98E /* BlankInitializerExtensions.swift in Sources */,
-				376557E7297C223100B8F98E /* PersonProtocol.swift in Sources */,
-				376557ED297C225900B8F98E /* UserTestData.swift in Sources */,
-				376557E4297C220C00B8F98E /* DashboardGreetingView.swift in Sources */,
-				376557E6297C222800B8F98E /* Prospect.swift in Sources */,
-				376557F0297C227200B8F98E /* StandardEvents.swift in Sources */,
-				376557F1297C227700B8F98E /* Client.swift in Sources */,
-				376557EF297C226700B8F98E /* ColorExtension.swift in Sources */,
-				376557EE297C226400B8F98E /* DateExtension.swift in Sources */,
-				376557E5297C222300B8F98E /* SalesPartner.swift in Sources */,
-				376557EB297C224100B8F98E /* Event.swift in Sources */,
-				376557E9297C223C00B8F98E /* Concept.swift in Sources */,
-				376557EA297C223F00B8F98E /* Proposal.swift in Sources */,
-				376557DB297C21DB00B8F98E /* ContentView.swift in Sources */,
-				376557E8297C223800B8F98E /* Appointment.swift in Sources */,
-				376557D9297C21DB00B8F98E /* FyeryTVApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		377D68CD2959C49600F26670 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,14 +418,17 @@
 				377D68FC2959E70F00F26670 /* Appointment.swift in Sources */,
 				37AB7368295F3C8F00544554 /* DateExtension.swift in Sources */,
 				377D68FA2959E2B100F26670 /* CallOutcomeView.swift in Sources */,
+				37888F012982ADDC004FFA09 /* ContactType.swift in Sources */,
 				377D68E82959C53800F26670 /* ClientView.swift in Sources */,
 				377D68EA2959C57300F26670 /* SalesPartnerView.swift in Sources */,
 				37AB73722960211F00544554 /* Proposal.swift in Sources */,
+				37888EFF2982AD4E004FFA09 /* MaritalStatus.swift in Sources */,
 				373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */,
 				377D68D72959C49600F26670 /* ContentView.swift in Sources */,
 				377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */,
 				37AB7364295F297900544554 /* ViewExtensions.swift in Sources */,
 				377D69082959F01500F26670 /* CallsView.swift in Sources */,
+				37888F062982B496004FFA09 /* ProspectEquatable.swift in Sources */,
 				37F8739B29638136006C7C7E /* ConceptClassificationView.swift in Sources */,
 				377D69022959EA5500F26670 /* Client.swift in Sources */,
 				377D68EC2959C57A00F26670 /* AccountView.swift in Sources */,
@@ -500,6 +446,8 @@
 				3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */,
 				37F566452972EC87000A455B /* DashboardGreetingView.swift in Sources */,
 				370FB3D6295B05D100EBB76C /* UserTestData.swift in Sources */,
+				37888F082982B4CA004FFA09 /* ProspectHashable.swift in Sources */,
+				37888F032982AEA5004FFA09 /* PersonType.swift in Sources */,
 				37F566472972EFAB000A455B /* ColorExtension.swift in Sources */,
 				37A2453D2976D3D1001523EF /* AddProspectNew.swift in Sources */,
 				37AB736C295F6E1800544554 /* BlankInitializerExtensions.swift in Sources */,
@@ -513,62 +461,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		376557E1297C21DC00B8F98E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FyeryTV/Preview Content\"";
-				DEVELOPMENT_TEAM = Q9KFEVE553;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lancz.FyeryTV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 16.1;
-			};
-			name = Debug;
-		};
-		376557E2297C21DC00B8F98E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FyeryTV/Preview Content\"";
-				DEVELOPMENT_TEAM = Q9KFEVE553;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lancz.FyeryTV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 16.1;
-			};
-			name = Release;
-		};
 		377D68DD2959C49700F26670 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -746,15 +638,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		376557E3297C21DC00B8F98E /* Build configuration list for PBXNativeTarget "FyeryTV" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				376557E1297C21DC00B8F98E /* Debug */,
-				376557E2297C21DC00B8F98E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		377D68CC2959C49600F26670 /* Build configuration list for PBXProject "FyeryPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

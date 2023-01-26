@@ -43,3 +43,15 @@ class Event: Identifiable, ObservableObject {
     
     
 }
+
+extension Event: Comparable {
+    static func < (lhs: Event, rhs: Event) -> Bool {
+        lhs.date < rhs.date
+    }
+    
+    static func == (lhs: Event, rhs: Event) -> Bool {
+        lhs.title == rhs.title && lhs.date == rhs.date
+    }
+    
+    
+}

@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 
 class SalesPartner: Person, Identifiable, ObservableObject {
+    static func == (lhs: SalesPartner, rhs: SalesPartner) -> Bool {
+        lhs.fullName == rhs.fullName
+    }
+    
     var isCustomer: Bool = false
     
     
@@ -24,9 +28,6 @@ class SalesPartner: Person, Identifiable, ObservableObject {
     @Published var firstName: String
     @Published var lastName: String
     @Published var phoneNumber: String
-    var fullName: String {
-        firstName + " " + lastName
-    }
     
     // Person Data
     @Published var prospects:[Prospect] = []
