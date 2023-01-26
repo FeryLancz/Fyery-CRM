@@ -10,49 +10,39 @@ import SwiftUI
 struct ProspectsView: View {
     @EnvironmentObject var user: SalesPartner
     @State private var addProspectShowing = false
-    @State private var newAddProspectShowing = false
+    @State var searchText = ""
     
     var body: some View {
-        NavigationView {
-            List(user.prospects) { prospect in
-                NavigationLink(destination: ProspectDetailView(prospect: prospect)) {
-                    ProspectCellView(prospect: prospect)
+        NavigationStack {
+            ScrollView(.vertical) {
+                ForEach(user.prospects) { prospect in
+                    NavigationLink(destination: ProspectDetailView(prospect: prospect)) {
+                        ProspectListRowView(prospect)
+                    }
+                    .buttonStyle(PlainButtonStyle())
                 }
+                .padding(.top, 10)
             }
-            .navigationTitle("Prospects")
-            .navigationBarTitleDisplayMode(.large)
+            
             .toolbar {
+                ToolbarItem(placement: .principal) {
+                    PrimaryHeader(title: "Prospects", logoSystemName: "person")
+                }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button {
                         addProspectShowing = true
                     } label: {
-                        Image(systemName: "plus")
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.accentColor)
+                            .font(.body)
+                            .bold()
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("+test") {
-                        newAddProspectShowing.toggle()
-                    }
-                }
             }
-            .sheet(isPresented: $addProspectShowing) {
-                AddProspectView()
-            }
-            .sheet(isPresented: $newAddProspectShowing) {
-                AddProspectNew()
-            }
-        }
-    }
-}
-
-struct ProspectCellView: View {
-    @ObservedObject var prospect: Prospect
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text(prospect.fullName)
-            Text(prospect.phoneNumber)
-                .font(.footnote)
+            .sheet(isPresented: $addProspectShowing) { AddProspectView() }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.inline)
+            .applyBackground()
         }
     }
 }

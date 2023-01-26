@@ -11,25 +11,14 @@ struct AddProspectHeaderView: View {
     var action: () -> Void
     var body: some View {
         HStack {
-            Image(systemName: "person.badge.plus")
-                .bold()
-                .padding(10)
-                .background {
-                    Circle()
-                        .stroke(lineWidth: 2)
-                }
-            Text("Create".uppercased())
-                .font(.title)
-            Text("Prospect".uppercased())
-                .font(.title)
-                .bold()
+            PrimaryHeader(title: "Create", title2: "Prospect", logoSystemName: "person.badge.plus", reverseBoldOrder: true)
             Spacer()
             Button {
                 action()
             } label: {
                 Image(systemName: "checkmark.circle.fill")
                     .foregroundColor(.green)
-                    .font(.title)
+                    .font(.title3)
                     .bold()
             }
         }

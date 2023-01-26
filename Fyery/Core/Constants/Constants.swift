@@ -7,6 +7,8 @@
 
 import Foundation
 
-struct VisualConstants {
-    
+struct Constants {
+    struct Visual {
+        
+    }
 }

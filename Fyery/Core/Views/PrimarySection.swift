@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PrimarySection<Content>: View where Content: View {
     var title: String?
+    var spacing = 10
     @ViewBuilder var content: () -> Content
     
     var body: some View {
@@ -26,8 +27,8 @@ struct PrimarySection<Content>: View where Content: View {
                         .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 0)
                 }
         }
-        .padding(.horizontal)
-        .padding(.bottom)
+        .padding(.horizontal, 15)
+        .padding(.vertical, CGFloat(spacing))
     }
 }
 

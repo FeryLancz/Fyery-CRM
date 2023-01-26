@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddProspectNew: View {
+struct AddProspectView: View {
     @Environment(\.dismiss) var dismiss
     @State private var firstName = ""
     @State private var lastName = ""
@@ -17,7 +17,7 @@ struct AddProspectNew: View {
     @State var sp = false
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             AddProspectHeaderView {
                 dismiss()
             }
@@ -63,7 +63,7 @@ struct AddProspectNew: View {
 
 struct AddProspectNew_Previews: PreviewProvider {
     static var previews: some View {
-        AddProspectNew()
+        AddProspectView()
     }
 }
 
