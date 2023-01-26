@@ -8,12 +8,20 @@
 import Foundation
 import SwiftUI
 
-class SalesPartner: Prospect {
+class SalesPartnerBackup: Person, Identifiable, ObservableObject {
+    var isCustomer: Bool = false
     
+    @Published var firstName: String
+    @Published var lastName: String
+    @Published var phoneNumber: String
+    
+    // Person Data
+    @Published var events: [Event] = []
     @Published var prospects:[Prospect] = []
     @Published var clients: [Client] = []
     @Published var salesPartners: [SalesPartner] = []
     @Published var appointments: [Appointment] = []
+    @Published var concepts: [Concept] = []
     
     var numberOfAppointmentsToClassify: Int {
         var count = 0
@@ -45,7 +53,11 @@ class SalesPartner: Prospect {
         }
     }
     
-    
+    init(firstName: String = "Fery", lastName: String = "Lancz", phoneNumber: String = "+43 660 4463239") {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.phoneNumber = phoneNumber
+    }
     
     
     func addAppointment(_ appointment: Appointment) {
