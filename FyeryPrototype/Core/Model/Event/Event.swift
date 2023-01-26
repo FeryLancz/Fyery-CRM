@@ -20,38 +20,5 @@ class Event: Identifiable, ObservableObject {
         self.description = description
         self.date = date
     }
-    
-    enum EventType: String {
-        case userInput = "User Input"
-        case callOnAppointment = "Call on Appointment"
-        case confirmationCall = "Confirmation Call"
-        case appointmentPerformed = "Appointment performed"
-        case conceptCreated = "Concept created"
-        case conceptFinished = "Concept Finished"
-        case appointmentNoShow
-        case appointmentFollowUp
-        case appointmentBreak
-    }
-    
-    static let EventImageSystemName: [EventType: String] = [
-        .callOnAppointment: "phone",
-        .confirmationCall: "mail",
-        .appointmentPerformed: "",
-        .conceptCreated: "",
-        .conceptFinished: ""
-    ]
-    
-    
 }
 
-extension Event: Comparable {
-    static func < (lhs: Event, rhs: Event) -> Bool {
-        lhs.date < rhs.date
-    }
-    
-    static func == (lhs: Event, rhs: Event) -> Bool {
-        lhs.title == rhs.title && lhs.date == rhs.date
-    }
-    
-    
-}

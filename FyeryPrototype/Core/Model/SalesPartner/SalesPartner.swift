@@ -11,9 +11,10 @@ import SwiftUI
 class SalesPartner: Prospect {
     
     @Published var prospects:[Prospect] = []
-    @Published var clients: [Client] = []
     @Published var salesPartners: [SalesPartner] = []
     @Published var appointments: [Appointment] = []
+    
+    var clients: [Prospect] { prospects.filter { $0.isCustomer } }
     
     var numberOfAppointmentsToClassify: Int {
         var count = 0

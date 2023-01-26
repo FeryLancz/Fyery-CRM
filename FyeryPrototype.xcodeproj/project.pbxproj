@@ -28,8 +28,6 @@
 		377D68FA2959E2B100F26670 /* CallOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68F92959E2B100F26670 /* CallOutcomeView.swift */; };
 		377D68FC2959E70F00F26670 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FB2959E70F00F26670 /* Appointment.swift */; };
 		377D68FE2959E88900F26670 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FD2959E88900F26670 /* Event.swift */; };
-		377D69002959E9FB00F26670 /* SalesPartnerBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FF2959E9FB00F26670 /* SalesPartnerBackup.swift */; };
-		377D69022959EA5500F26670 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69012959EA5500F26670 /* Client.swift */; };
 		377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69032959EADF00F26670 /* PersonProtocol.swift */; };
 		377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69052959EF4200F26670 /* AppointmentsView.swift */; };
 		377D69082959F01500F26670 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69072959F01500F26670 /* CallsView.swift */; };
@@ -39,6 +37,14 @@
 		37888F062982B496004FFA09 /* ProspectEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F052982B496004FFA09 /* ProspectEquatable.swift */; };
 		37888F082982B4CA004FFA09 /* ProspectHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F072982B4CA004FFA09 /* ProspectHashable.swift */; };
 		37888F0A2982B6F9004FFA09 /* SalesPartner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F092982B6F9004FFA09 /* SalesPartner.swift */; };
+		37888F0D2982BB78004FFA09 /* SalesPartnerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F0C2982BB78004FFA09 /* SalesPartnerListRowView.swift */; };
+		37888F0F2982BC1C004FFA09 /* AddSalesPartnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F0E2982BC1C004FFA09 /* AddSalesPartnerView.swift */; };
+		37888F112982BC51004FFA09 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F102982BC51004FFA09 /* EventType.swift */; };
+		37888F132982BC68004FFA09 /* EventComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F122982BC68004FFA09 /* EventComparable.swift */; };
+		37888F152982BCF6004FFA09 /* AppointmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F142982BCF6004FFA09 /* AppointmentType.swift */; };
+		37888F172982BDD3004FFA09 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F162982BDD3004FFA09 /* Company.swift */; };
+		37888F192982BDEE004FFA09 /* ProposalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F182982BDEE004FFA09 /* ProposalType.swift */; };
+		37888F1B2982BDFF004FFA09 /* ContractDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F1A2982BDFF004FFA09 /* ContractDivision.swift */; };
 		378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378991582961B5320002735C /* AppointmentOutcomeView.swift */; };
 		3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1BE29609F7500E15ACD /* ConceptsView.swift */; };
 		3789F1CA2961A6C100E15ACD /* StandardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1C92961A6C100E15ACD /* StandardEvents.swift */; };
@@ -81,7 +87,6 @@
 		377D68FB2959E70F00F26670 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		377D68FD2959E88900F26670 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		377D68FF2959E9FB00F26670 /* SalesPartnerBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPartnerBackup.swift; sourceTree = "<group>"; };
-		377D69012959EA5500F26670 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		377D69032959EADF00F26670 /* PersonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProtocol.swift; sourceTree = "<group>"; };
 		377D69052959EF4200F26670 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
 		377D69072959F01500F26670 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
@@ -91,6 +96,14 @@
 		37888F052982B496004FFA09 /* ProspectEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectEquatable.swift; sourceTree = "<group>"; };
 		37888F072982B4CA004FFA09 /* ProspectHashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectHashable.swift; sourceTree = "<group>"; };
 		37888F092982B6F9004FFA09 /* SalesPartner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPartner.swift; sourceTree = "<group>"; };
+		37888F0C2982BB78004FFA09 /* SalesPartnerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPartnerListRowView.swift; sourceTree = "<group>"; };
+		37888F0E2982BC1C004FFA09 /* AddSalesPartnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSalesPartnerView.swift; sourceTree = "<group>"; };
+		37888F102982BC51004FFA09 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		37888F122982BC68004FFA09 /* EventComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventComparable.swift; sourceTree = "<group>"; };
+		37888F142982BCF6004FFA09 /* AppointmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentType.swift; sourceTree = "<group>"; };
+		37888F162982BDD3004FFA09 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		37888F182982BDEE004FFA09 /* ProposalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalType.swift; sourceTree = "<group>"; };
+		37888F1A2982BDFF004FFA09 /* ContractDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDivision.swift; sourceTree = "<group>"; };
 		378991582961B5320002735C /* AppointmentOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentOutcomeView.swift; sourceTree = "<group>"; };
 		3789F1BE29609F7500E15ACD /* ConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsView.swift; sourceTree = "<group>"; };
 		3789F1C92961A6C100E15ACD /* StandardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardEvents.swift; sourceTree = "<group>"; };
@@ -145,6 +158,7 @@
 				3789F1C42960A2F600E15ACD /* Utility */,
 				377D68D82959C49700F26670 /* Assets.xcassets */,
 				377D68DA2959C49700F26670 /* Preview Content */,
+				37888F0B2982BA7D004FFA09 /* Old */,
 			);
 			path = FyeryPrototype;
 			sourceTree = "<group>";
@@ -214,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				377D68E92959C57300F26670 /* SalesPartnerView.swift */,
+				37888F0C2982BB78004FFA09 /* SalesPartnerListRowView.swift */,
+				37888F0E2982BC1C004FFA09 /* AddSalesPartnerView.swift */,
 			);
 			path = SalesPartners;
 			sourceTree = "<group>";
@@ -233,9 +249,8 @@
 				37888EFC2982AD04004FFA09 /* Prospect */,
 				37888EFB2982ACF2004FFA09 /* SalesPartner */,
 				37888F042982AF02004FFA09 /* Event */,
-				3789F1C32960A2A400E15ACD /* People */,
 				3789F1C22960A29700E15ACD /* Appointment */,
-				3789F1C52960A31C00E15ACD /* Business */,
+				3789F1C52960A31C00E15ACD /* BusinessLogic */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,7 +258,6 @@
 		37888EFB2982ACF2004FFA09 /* SalesPartner */ = {
 			isa = PBXGroup;
 			children = (
-				377D68FF2959E9FB00F26670 /* SalesPartnerBackup.swift */,
 				37888F092982B6F9004FFA09 /* SalesPartner.swift */,
 			);
 			path = SalesPartner;
@@ -274,25 +288,28 @@
 			isa = PBXGroup;
 			children = (
 				377D68FD2959E88900F26670 /* Event.swift */,
+				37888F102982BC51004FFA09 /* EventType.swift */,
+				37888F122982BC68004FFA09 /* EventComparable.swift */,
 				3789F1C92961A6C100E15ACD /* StandardEvents.swift */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		37888F0B2982BA7D004FFA09 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				377D68FF2959E9FB00F26670 /* SalesPartnerBackup.swift */,
+			);
+			path = Old;
 			sourceTree = "<group>";
 		};
 		3789F1C22960A29700E15ACD /* Appointment */ = {
 			isa = PBXGroup;
 			children = (
 				377D68FB2959E70F00F26670 /* Appointment.swift */,
+				37888F142982BCF6004FFA09 /* AppointmentType.swift */,
 			);
 			path = Appointment;
-			sourceTree = "<group>";
-		};
-		3789F1C32960A2A400E15ACD /* People */ = {
-			isa = PBXGroup;
-			children = (
-				377D69012959EA5500F26670 /* Client.swift */,
-			);
-			path = People;
 			sourceTree = "<group>";
 		};
 		3789F1C42960A2F600E15ACD /* Utility */ = {
@@ -304,13 +321,16 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		3789F1C52960A31C00E15ACD /* Business */ = {
+		3789F1C52960A31C00E15ACD /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
 				37AB73732960216E00544554 /* Concept.swift */,
 				37AB73712960211F00544554 /* Proposal.swift */,
+				37888F162982BDD3004FFA09 /* Company.swift */,
+				37888F182982BDEE004FFA09 /* ProposalType.swift */,
+				37888F1A2982BDFF004FFA09 /* ContractDivision.swift */,
 			);
-			path = Business;
+			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 		3789F1C62960A33E00E15ACD /* Appointments */ = {
@@ -414,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */,
+				37888F0D2982BB78004FFA09 /* SalesPartnerListRowView.swift in Sources */,
 				377D68E62959C53200F26670 /* ProspectView.swift in Sources */,
 				377D68F42959DA0400F26670 /* Prospect.swift in Sources */,
 				377D68F62959DD7B00F26670 /* AddProspectView.swift in Sources */,
@@ -428,13 +449,15 @@
 				37AB73722960211F00544554 /* Proposal.swift in Sources */,
 				37888EFF2982AD4E004FFA09 /* MaritalStatus.swift in Sources */,
 				373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */,
+				37888F132982BC68004FFA09 /* EventComparable.swift in Sources */,
 				377D68D72959C49600F26670 /* ContentView.swift in Sources */,
 				377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */,
 				37AB7364295F297900544554 /* ViewExtensions.swift in Sources */,
+				37888F1B2982BDFF004FFA09 /* ContractDivision.swift in Sources */,
+				37888F152982BCF6004FFA09 /* AppointmentType.swift in Sources */,
 				377D69082959F01500F26670 /* CallsView.swift in Sources */,
 				37888F062982B496004FFA09 /* ProspectEquatable.swift in Sources */,
 				37F8739B29638136006C7C7E /* ConceptClassificationView.swift in Sources */,
-				377D69022959EA5500F26670 /* Client.swift in Sources */,
 				377D68EC2959C57A00F26670 /* AccountView.swift in Sources */,
 				3729E0FF295CE8710046526B /* SplitTextView.swift in Sources */,
 				37A2453B2976B0CF001523EF /* UnitsWidget.swift in Sources */,
@@ -444,11 +467,14 @@
 				378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */,
 				37AB7366295F395000544554 /* PastAppointmentsView.swift in Sources */,
 				377D68FE2959E88900F26670 /* Event.swift in Sources */,
+				37888F172982BDD3004FFA09 /* Company.swift in Sources */,
 				3729E103295CF0CF0046526B /* EventDetailView.swift in Sources */,
+				37888F0F2982BC1C004FFA09 /* AddSalesPartnerView.swift in Sources */,
 				3729E101295CEA5D0046526B /* ConfirmationCallOutcomeView.swift in Sources */,
 				37D7E43C295A5BB500EBD9B9 /* AppointmentDetailView.swift in Sources */,
 				3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */,
 				37F566452972EC87000A455B /* DashboardGreetingView.swift in Sources */,
+				37888F192982BDEE004FFA09 /* ProposalType.swift in Sources */,
 				370FB3D6295B05D100EBB76C /* UserTestData.swift in Sources */,
 				37888F082982B4CA004FFA09 /* ProspectHashable.swift in Sources */,
 				37888F032982AEA5004FFA09 /* PersonType.swift in Sources */,
@@ -457,8 +483,8 @@
 				37AB736C295F6E1800544554 /* BlankInitializerExtensions.swift in Sources */,
 				37A245392976AFF7001523EF /* ViewExtension.swift in Sources */,
 				37AB73742960216E00544554 /* Concept.swift in Sources */,
+				37888F112982BC51004FFA09 /* EventType.swift in Sources */,
 				373AEBB929634754003B7FB6 /* AddProposalView.swift in Sources */,
-				377D69002959E9FB00F26670 /* SalesPartnerBackup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

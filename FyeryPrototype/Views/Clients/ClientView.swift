@@ -12,7 +12,7 @@ struct ClientView: View {
     
     var body: some View {
         NavigationView {
-            List(user.prospects.filter { $0.isCustomer }) { client in
+            List(user.clients) { client in
                 ClientCellView(client: client)
             }
         }

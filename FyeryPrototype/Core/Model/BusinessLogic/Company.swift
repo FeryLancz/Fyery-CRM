@@ -1,48 +1,11 @@
 //
-//  Proposal.swift
+//  Company.swift
 //  FyeryPrototype
 //
-//  Created by Fery Lancz on 31.12.22.
+//  Created by Fery Lancz on 26.01.23.
 //
 
 import Foundation
-
-class Proposal: ObservableObject, Identifiable {
-    @Published var division: ContractDivision = .notSelected
-    @Published var type: ProposalType = .change
-    
-    @Published var prevCompany: Company = .notSelected
-    @Published var prevPremium: Double = 0.0
-    @Published var newCompany: Company = .notSelected
-    @Published var newPremium: Double = 0.0
-    
-    @Published var preSelection = true
-    @Published var selection = true
-}
-
-enum ContractDivision: String, CaseIterable {
-    case notSelected = "Sparte wählen"
-    case bsp =  "Bausparvertrag"
-    case bu = "Berufsunfähigkeitsversicherung"
-    case flv = "Fondsgebundene Lebensversicherung"
-    case fonds = "Fonds"
-    case geld = "Kredit"
-    case haf = "Privathaftpflicht"
-    case kfz = "KFZ - Versicherung"
-    case kv = "Krankenversicherung"
-    case lv = "Lebensversicherung"
-    case pp = "Prämienpension"
-    case rsv = "Rechtsschutz"
-    case sach = "Haushalt / Eigenheim"
-    case unf = "Unfallversicherung"
-    case other = "Sonstiges"
-}
-
-enum ProposalType: String, CaseIterable {
-    case change = "Change"
-    case newContract = "New Contract"
-    case cancellation = "Cancellation"
-}
 
 enum Company: String, CaseIterable {
     case notSelected = "Gesellschaft wählen"
