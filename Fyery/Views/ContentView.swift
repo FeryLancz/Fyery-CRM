@@ -13,7 +13,7 @@ struct ContentView: View {
         TabView(selection: $selection) {
             TabItemView(title: "Dashboard", systemName: "display.2", idNumber: 0, content: AnyView(DashboardView()))
                 .tag(0)
-            TabItemView(title: "Prospects", systemName: "person.fill.viewfinder", idNumber: 1, content: AnyView(ProspectView()))
+            TabItemView(title: "Prospects", systemName: "person.fill.viewfinder", idNumber: 1, content: AnyView(ProspectsView()))
                 .tag(1)
             TabItemView(title: "Clients", systemName: "person.3.sequence.fill", idNumber: 2, content: AnyView(ClientView()))
                 .tag(2)

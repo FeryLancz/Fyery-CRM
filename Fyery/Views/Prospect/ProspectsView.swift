@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProspectView: View {
+struct ProspectsView: View {
     @EnvironmentObject var user: SalesPartner
     @State private var addProspectShowing = false
     @State private var newAddProspectShowing = false
@@ -59,7 +59,7 @@ struct ProspectCellView: View {
 
 struct ProspectView_Previews: PreviewProvider {
     static var previews: some View {
-        ProspectView()
+        ProspectsView()
             .environmentObject(SalesPartner(generateTestData: true))
     }
 }

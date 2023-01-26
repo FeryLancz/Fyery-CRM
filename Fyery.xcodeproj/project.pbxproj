@@ -13,12 +13,13 @@
 		3729E103295CF0CF0046526B /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3729E102295CF0CF0046526B /* EventDetailView.swift */; };
 		373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */; };
 		373AEBB929634754003B7FB6 /* AddProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB829634754003B7FB6 /* AddProposalView.swift */; };
+		37511EC229831B8D002E73EC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37511EC129831B8D002E73EC /* Colors.xcassets */; };
 		377D68D52959C49600F26670 /* FyeryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68D42959C49600F26670 /* FyeryApp.swift */; };
 		377D68D72959C49600F26670 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68D62959C49600F26670 /* ContentView.swift */; };
-		377D68D92959C49700F26670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D68D82959C49700F26670 /* Assets.xcassets */; };
+		377D68D92959C49700F26670 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D68D82959C49700F26670 /* Media.xcassets */; };
 		377D68DC2959C49700F26670 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D68DB2959C49700F26670 /* Preview Assets.xcassets */; };
 		377D68E42959C4D000F26670 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E32959C4D000F26670 /* DashboardView.swift */; };
-		377D68E62959C53200F26670 /* ProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E52959C53200F26670 /* ProspectView.swift */; };
+		377D68E62959C53200F26670 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E52959C53200F26670 /* ProspectsView.swift */; };
 		377D68E82959C53800F26670 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E72959C53800F26670 /* ClientView.swift */; };
 		377D68EA2959C57300F26670 /* SalesPartnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68E92959C57300F26670 /* SalesPartnerView.swift */; };
 		377D68EC2959C57A00F26670 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68EB2959C57A00F26670 /* AccountView.swift */; };
@@ -30,7 +31,6 @@
 		377D68FE2959E88900F26670 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D68FD2959E88900F26670 /* Event.swift */; };
 		377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69032959EADF00F26670 /* PersonProtocol.swift */; };
 		377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69052959EF4200F26670 /* AppointmentsView.swift */; };
-		377D69082959F01500F26670 /* CallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D69072959F01500F26670 /* CallsView.swift */; };
 		37888EFF2982AD4E004FFA09 /* MaritalStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888EFE2982AD4E004FFA09 /* MaritalStatus.swift */; };
 		37888F012982ADDC004FFA09 /* ContactType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F002982ADDC004FFA09 /* ContactType.swift */; };
 		37888F032982AEA5004FFA09 /* PersonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F022982AEA5004FFA09 /* PersonType.swift */; };
@@ -76,13 +76,14 @@
 		3729E102295CF0CF0046526B /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
 		373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptDetailView.swift; sourceTree = "<group>"; };
 		373AEBB829634754003B7FB6 /* AddProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProposalView.swift; sourceTree = "<group>"; };
+		37511EC129831B8D002E73EC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		377D68D12959C49600F26670 /* Fyery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fyery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377D68D42959C49600F26670 /* FyeryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryApp.swift; sourceTree = "<group>"; };
 		377D68D62959C49600F26670 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		377D68D82959C49700F26670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		377D68D82959C49700F26670 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		377D68DB2959C49700F26670 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		377D68E32959C4D000F26670 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		377D68E52959C53200F26670 /* ProspectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectView.swift; sourceTree = "<group>"; };
+		377D68E52959C53200F26670 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		377D68E72959C53800F26670 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
 		377D68E92959C57300F26670 /* SalesPartnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPartnerView.swift; sourceTree = "<group>"; };
 		377D68EB2959C57A00F26670 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -92,10 +93,8 @@
 		377D68F92959E2B100F26670 /* CallOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOutcomeView.swift; sourceTree = "<group>"; };
 		377D68FB2959E70F00F26670 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		377D68FD2959E88900F26670 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		377D68FF2959E9FB00F26670 /* SalesPartnerBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPartnerBackup.swift; sourceTree = "<group>"; };
 		377D69032959EADF00F26670 /* PersonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProtocol.swift; sourceTree = "<group>"; };
 		377D69052959EF4200F26670 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
-		377D69072959F01500F26670 /* CallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsView.swift; sourceTree = "<group>"; };
 		37888EFE2982AD4E004FFA09 /* MaritalStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritalStatus.swift; sourceTree = "<group>"; };
 		37888F002982ADDC004FFA09 /* ContactType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactType.swift; sourceTree = "<group>"; };
 		37888F022982AEA5004FFA09 /* PersonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonType.swift; sourceTree = "<group>"; };
@@ -157,8 +156,6 @@
 		37511EBE298318F0002E73EC /* MenuItems */ = {
 			isa = PBXGroup;
 			children = (
-				377D69072959F01500F26670 /* CallsView.swift */,
-				3729E100295CEA5D0046526B /* ConfirmationCallOutcomeView.swift */,
 			);
 			path = MenuItems;
 			sourceTree = "<group>";
@@ -169,6 +166,22 @@
 				37A2453A2976B0CF001523EF /* UnitsWidget.swift */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		37511EC029831A50002E73EC /* Call */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		37511EC329831CA1002E73EC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				377D68D82959C49700F26670 /* Media.xcassets */,
+				37511EC129831B8D002E73EC /* Colors.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		377D68C82959C49600F26670 = {
@@ -190,12 +203,10 @@
 		377D68D32959C49600F26670 /* Fyery */ = {
 			isa = PBXGroup;
 			children = (
-				377D68D42959C49600F26670 /* FyeryApp.swift */,
 				37A245372976AFD4001523EF /* Core */,
 				377D68E22959C4BF00F26670 /* Views */,
-				377D68D82959C49700F26670 /* Assets.xcassets */,
+				37511EC329831CA1002E73EC /* Assets */,
 				377D68DA2959C49700F26670 /* Preview Content */,
-				37888F0B2982BA7D004FFA09 /* Old */,
 			);
 			path = Fyery;
 			sourceTree = "<group>";
@@ -213,13 +224,14 @@
 		377D68E22959C4BF00F26670 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37511EC029831A50002E73EC /* Call */,
 				37A245382976AFF7001523EF /* ViewExtension.swift */,
 				377D68D62959C49600F26670 /* ContentView.swift */,
 				377D68ED2959D99F00F26670 /* Dashboard */,
 				3789F1C62960A33E00E15ACD /* Appointment */,
 				377D68EE2959D9A700F26670 /* Prospect */,
-				377D68EF2959D9AC00F26670 /* Clients */,
-				377D68F02959D9B200F26670 /* SalesPartners */,
+				377D68EF2959D9AC00F26670 /* Client */,
+				377D68F02959D9B200F26670 /* SalesPartner */,
 				377D68F12959D9B800F26670 /* Account */,
 			);
 			path = Views;
@@ -242,7 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				37888F2B2982F542004FFA09 /* AddProspect */,
-				377D68E52959C53200F26670 /* ProspectView.swift */,
+				377D68E52959C53200F26670 /* ProspectsView.swift */,
 				377D68F52959DD7B00F26670 /* AddProspectView.swift */,
 				377D68F72959E21200F26670 /* ProspectDetailView.swift */,
 				377D68F92959E2B100F26670 /* CallOutcomeView.swift */,
@@ -251,22 +263,22 @@
 			path = Prospect;
 			sourceTree = "<group>";
 		};
-		377D68EF2959D9AC00F26670 /* Clients */ = {
+		377D68EF2959D9AC00F26670 /* Client */ = {
 			isa = PBXGroup;
 			children = (
 				377D68E72959C53800F26670 /* ClientView.swift */,
 			);
-			path = Clients;
+			path = Client;
 			sourceTree = "<group>";
 		};
-		377D68F02959D9B200F26670 /* SalesPartners */ = {
+		377D68F02959D9B200F26670 /* SalesPartner */ = {
 			isa = PBXGroup;
 			children = (
 				377D68E92959C57300F26670 /* SalesPartnerView.swift */,
 				37888F0C2982BB78004FFA09 /* SalesPartnerListRowView.swift */,
 				37888F0E2982BC1C004FFA09 /* AddSalesPartnerView.swift */,
 			);
-			path = SalesPartners;
+			path = SalesPartner;
 			sourceTree = "<group>";
 		};
 		377D68F12959D9B800F26670 /* Account */ = {
@@ -328,14 +340,6 @@
 				3789F1C92961A6C100E15ACD /* StandardEvents.swift */,
 			);
 			path = Event;
-			sourceTree = "<group>";
-		};
-		37888F0B2982BA7D004FFA09 /* Old */ = {
-			isa = PBXGroup;
-			children = (
-				377D68FF2959E9FB00F26670 /* SalesPartnerBackup.swift */,
-			);
-			path = Old;
 			sourceTree = "<group>";
 		};
 		37888F212982EBAA004FFA09 /* Views */ = {
@@ -406,6 +410,7 @@
 				37D7E43B295A5BB500EBD9B9 /* AppointmentDetailView.swift */,
 				378991582961B5320002735C /* AppointmentOutcomeView.swift */,
 				37F8739A29638136006C7C7E /* ConceptClassificationView.swift */,
+				3729E100295CEA5D0046526B /* ConfirmationCallOutcomeView.swift */,
 			);
 			path = Appointment;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 		37A245372976AFD4001523EF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				377D68D42959C49600F26670 /* FyeryApp.swift */,
 				377D68F22959D9F800F26670 /* Model */,
 				37888F212982EBAA004FFA09 /* Views */,
 				37888F2C2982F812004FFA09 /* Extensions */,
@@ -479,8 +485,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37511EC229831B8D002E73EC /* Colors.xcassets in Resources */,
 				377D68DC2959C49700F26670 /* Preview Assets.xcassets in Resources */,
-				377D68D92959C49700F26670 /* Assets.xcassets in Resources */,
+				377D68D92959C49700F26670 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +500,7 @@
 			files = (
 				377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */,
 				37888F0D2982BB78004FFA09 /* SalesPartnerListRowView.swift in Sources */,
-				377D68E62959C53200F26670 /* ProspectView.swift in Sources */,
+				377D68E62959C53200F26670 /* ProspectsView.swift in Sources */,
 				37888F2A2982F51F004FFA09 /* AddProspectHeaderView.swift in Sources */,
 				377D68F42959DA0400F26670 /* Prospect.swift in Sources */,
 				37888F282982F0AE004FFA09 /* VisualConstants.swift in Sources */,
@@ -518,7 +525,6 @@
 				37AB7364295F297900544554 /* ViewExtensions.swift in Sources */,
 				37888F1B2982BDFF004FFA09 /* ContractDivision.swift in Sources */,
 				37888F152982BCF6004FFA09 /* AppointmentType.swift in Sources */,
-				377D69082959F01500F26670 /* CallsView.swift in Sources */,
 				37888F062982B496004FFA09 /* ProspectEquatable.swift in Sources */,
 				37F8739B29638136006C7C7E /* ConceptClassificationView.swift in Sources */,
 				377D68EC2959C57A00F26670 /* AccountView.swift in Sources */,
