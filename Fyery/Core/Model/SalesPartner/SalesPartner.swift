@@ -87,4 +87,6 @@ class SalesPartner: Prospect {
         
         //TODO: Add additional setup for tracking of new Contracts and sending of Cancellations
     }
+    
+   
 }

@@ -41,7 +41,7 @@ struct AddProspectView: View {
                     Divider()
                         .tint(.main)
                     Toggle(isOn: $sp) {
-                        Title2("Interest in additional income")
+                        Title3("Interest in additional income")
                     }
                     .tint(.main)
                 }

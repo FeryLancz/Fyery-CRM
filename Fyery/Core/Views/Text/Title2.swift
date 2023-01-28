@@ -2,7 +2,7 @@
 //  Title2.swift
 //  Fyery
 //
-//  Created by Fery Lancz on 26.01.23.
+//  Created by Fery Lancz on 27.01.23.
 //
 
 import SwiftUI
@@ -14,7 +14,7 @@ struct Title2: View {
     
     var body: some View {
         Text(text.uppercased())
-            .font(.subheadline)
+            .font(.title3)
             .kerning(0.5)
             .foregroundColor(.main)
     }

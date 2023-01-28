@@ -23,11 +23,11 @@ struct DashboardGreetingView: View {
     }
     
     var body: some View {
-        Text("\(greeting), \(user.firstName) \(Image(systemName: "hand.wave"))")
-            .font(.title)
-            .fontWeight(.heavy)
-            .kerning(1.0)
-            .padding()
+        HStack {
+            Title("\(greeting), \(user.firstName)")
+            Image(systemName: "hand.wave")
+                .title()
+        }
     }
 }
 

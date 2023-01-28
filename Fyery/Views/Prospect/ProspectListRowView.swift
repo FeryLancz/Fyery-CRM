@@ -15,23 +15,30 @@ struct ProspectListRowView: View {
     var body: some View {
         PrimarySection(spacing: 2) {
             HStack {
+                ZStack {
+                    Text(prospect.initials)
+                        //.font(.title3)
+                        .bold()
+                    StandardCircle()
+                }
+                .foregroundColor(.main)
                 VStack(alignment: .leading, spacing: 5) {
                     HStack(spacing: 5) {
                         Text(prospect.firstName)
                         Text(prospect.lastName)
                             .bold()
                         Spacer()
-                        Text(prospect.contactType.rawValue + " | " + prospect.contectorFullName)
-                            .font(.footnote)
                     }
-                    .font(.title3)
+                    .font(.body)
                     .foregroundColor(.main)
                     
                     Text(prospect.lastContact.formatted(date: .complete, time: .omitted))
                         .font(.footnote)
+                        .foregroundColor(.utility)
                 }
                 Spacer()
                 Image(systemName: "chevron.forward")
+                    .foregroundColor(.action)
             }
             
         }

@@ -27,7 +27,7 @@ struct PrimarySection<Content>: View where Content: View {
                         .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 0)
                 }
         }
-        .padding(.horizontal, 15)
+        //.padding(.horizontal, 15)
         .padding(.vertical, CGFloat(spacing))
     }
 }

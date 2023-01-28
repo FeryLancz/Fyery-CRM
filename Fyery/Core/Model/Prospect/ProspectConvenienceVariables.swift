@@ -14,4 +14,10 @@ extension Prospect {
     var contectorFullName: String {
         return "Fery Lancz"
     }
+    var initials: String {
+        if let fi = firstName.first, let li = lastName.first {
+            return String(fi) + String(li)
+        }
+        return "X"
+    }
 }

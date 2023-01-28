@@ -27,4 +27,33 @@ extension View {
             Spacer()
         }
     }
+    
+    func customAlign(_ alignment: HorizontalAlignment) -> some View {
+        HStack {
+            if alignment == .trailing || alignment == .center {
+                Spacer()
+            }
+            self
+            if alignment == .leading || alignment == .center {
+                Spacer()
+            }
+        }
+    }
+    
+    func heading1() -> some View {
+        self
+            .font(.title3)
+            .fontWeight(.bold)
+        
+    }
 }
+
+extension Image {
+    func title() -> some View {
+        self
+            .font(.title)
+            .fontWeight(.heavy)
+            .foregroundColor(.main)
+    }
+}
+

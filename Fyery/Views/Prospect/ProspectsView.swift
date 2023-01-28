@@ -18,10 +18,12 @@ struct ProspectsView: View {
                 ForEach(user.prospects) { prospect in
                     NavigationLink(destination: ProspectDetailView(prospect: prospect)) {
                         ProspectListRowView(prospect)
+                            
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
                 .padding(.top, 10)
+                .padding(.horizontal, 15)
             }
             
             .toolbar {
@@ -33,7 +35,7 @@ struct ProspectsView: View {
                         addProspectShowing = true
                     } label: {
                         Image(systemName: "plus.circle.fill")
-                            .foregroundColor(.accentColor)
+                            .foregroundColor(.action)
                             .font(.body)
                             .bold()
                     }

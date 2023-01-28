@@ -16,21 +16,15 @@ struct PrimaryHeader: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            Image(systemName: logoSystemName)
-                .bold()
-                .padding(7)
-                .background {
-                    Circle()
-                        .stroke(lineWidth: 2)
-                }
+            CircularImage(systemName: logoSystemName)
                 .padding(.trailing, 7)
             Text(title.uppercased())
-                .font(.title)
+                .font(.title2)
                 .fontWeight(!reverseBoldOrder ? .bold : .regular)
                 .padding(.trailing, space ? 7 : 0)
             if let title2 = title2 {
                 Text(title2.uppercased())
-                    .font(.title)
+                    .font(.title2)
                     .fontWeight(!reverseBoldOrder ? .regular : .bold)
             }
         }
@@ -40,7 +34,7 @@ struct PrimaryHeader: View {
 
 struct PrimaryHeader_Previews: PreviewProvider {
     static var previews: some View {
-        PrimaryHeader(title: "create", title2: "prospect", logoSystemName: "person", reverseBoldOrder: false, space: true)
+        PrimaryHeader(title: "create", title2: "prospect", logoSystemName: "display.2", reverseBoldOrder: false, space: true)
             .previewLayout(.sizeThatFits)
     }
 }
