@@ -33,6 +33,12 @@ extension View {
             .foregroundColor(.utility)
     }
     
+    func note() -> some View {
+        self
+            .font(.footnote)
+            .foregroundColor(.main.opacity(0.5))
+    }
+    
     func heading1() -> some View {
         self
             .font(.title2)

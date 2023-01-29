@@ -24,7 +24,6 @@ struct ProspectsView: View {
                 }
                 .padding(.top, 10)
             }
-            
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     PrimaryHeader(title: "Prospects", logoSystemName: "person")
@@ -35,8 +34,7 @@ struct ProspectsView: View {
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .foregroundColor(.action)
-                            .font(.body)
-                            .bold()
+                            .heading2()
                     }
                 }
             }

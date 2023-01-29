@@ -12,38 +12,40 @@ struct AddProspectView: View {
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var phoneNumber = ""
-    @State private var email = ""
-    @State var personType: PersonType = .male
+    
+    @State private var contactType: ContactType = .relative
+    
     @State var sp = false
     
     var body: some View {
-        VStack(spacing: 0) {
-            AddProspectHeaderView {
-                dismiss()
-            }
+        NavigationStack {
             ScrollView(.vertical) {
-                PrimarySection(title: "Contact Information") {
+                PrimarySection(title: "Personal Information", verticalSpacing: 10) {
                     PrimaryTextField(input: $firstName, title: "First Name", placeholder: "Max")
                     PrimaryTextField(input: $lastName, title: "Last Name", placeholder: "Mustermann")
                     PrimaryTextField(input: $phoneNumber, title: "phone number", subtitle: "Enter in international format", placeholder: "+43 660 12345678", keyboardType: .phonePad)
-                    PrimaryTextField(input: $email, title: "email address", placeholder: "max.muster@efs.at", keyboardType: .emailAddress)
                 }
                 
-                PrimarySection(title: "Reccomendation Data") {
+                PrimarySection(title: "Contact Information", verticalSpacing: 0) {
+                    EnumPicker(selection: $contactType, title: "Contact Type")
                     PrimaryTextField(input: $firstName, title: "Contact by")
-                    PrimaryTextField(input: $firstName, title: "Contact Type")
+                    PrimaryTextField(input: $firstName, title: "Advisor")
                 }
                 
-                PrimarySection(title: "Personal Information") {
+                PrimarySection(title: "Details") {
                     PrimaryTextField(input: $firstName, title: "Current Job")
                     PrimaryTextField(input: $firstName, title: "Approximate Age")
                     PrimaryTextField(input: $firstName, title: "Children")
+                    PrimaryTextField(input: $firstName, title: "Marital Status")
                     Divider()
                         .tint(.main)
                     Toggle(isOn: $sp) {
                         Heading3("Interest in additional income")
                     }
                     .tint(.main)
+                    Divider()
+                        .tint(.main)
+                    PrimaryTextField(input: $firstName, title: "Note")
                 }
                 
                 PrimarySection(title: "Address") {
@@ -52,10 +54,27 @@ struct AddProspectView: View {
                     PrimaryTextField(input: $firstName, title: "Street")
                 }
                 
+                PrimarySection(title: "Extra") {
+                    PrimaryTextField(input: $firstName, title: "E-Mail address")
+                    PrimaryTextField(input: $firstName, title: "Birthday")
+                }
             }
-            
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    PrimaryHeader(title: "Create", title2: "Prospect", logoSystemName: "person")
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "checkmark.circle.fill")
+                            .foregroundColor(.confirm)
+                            .heading2()
+                    }
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .applyBackground()
     }
 }
 

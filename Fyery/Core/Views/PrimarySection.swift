@@ -14,7 +14,7 @@ struct PrimarySection<Content>: View where Content: View {
     @ViewBuilder var content: () -> Content
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 5) {
             if let title = title {
                 Heading2(title.uppercased())
             }

@@ -12,3 +12,9 @@ extension Prospect: Equatable {
         lhs.fullName == rhs.fullName && lhs.phoneNumber == rhs.phoneNumber
     }
 }
+
+extension Prospect: Comparable {
+    static func < (lhs: Prospect, rhs: Prospect) -> Bool {
+        lhs.lastInteraction < rhs.lastInteraction
+    }
+}

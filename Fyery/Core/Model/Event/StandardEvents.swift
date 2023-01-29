@@ -23,4 +23,6 @@ extension Event {
             description: "\(appointment.type.rawValue) date was changed from \(appointment.date.formatted()) to \(newDate.formatted())"
         )
     }
+    
+    static let prospectCreation = Event(type: .userInput, title: "Prospect created", description: "Prospect was created")
 }

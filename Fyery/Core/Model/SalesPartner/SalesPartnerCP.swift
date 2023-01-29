@@ -38,6 +38,11 @@ extension SalesPartner {
         })
     }
     
+    func addProspect(_ prospect: Prospect) {
+        prospects.append(prospect)
+        prospects.sort(by: <)
+    }
+    
     func getConcepts(for person: Person) -> [Concept] {
         var concepts: [Concept] = []
         for appointment in self.appointments where appointment.participant === person && appointment.concept != nil {

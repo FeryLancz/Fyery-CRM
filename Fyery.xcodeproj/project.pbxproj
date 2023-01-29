@@ -50,7 +50,6 @@
 		37888F232982EBC9004FFA09 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F222982EBC9004FFA09 /* PrimaryTextField.swift */; };
 		37888F252982EF91004FFA09 /* CustomRoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F242982EF91004FFA09 /* CustomRoundedCorner.swift */; };
 		37888F282982F0AE004FFA09 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F272982F0AE004FFA09 /* Constants.swift */; };
-		37888F2A2982F51F004FFA09 /* AddProspectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F292982F51F004FFA09 /* AddProspectHeaderView.swift */; };
 		37888F2E2982F88F004FFA09 /* PrimarySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F2D2982F88F004FFA09 /* PrimarySection.swift */; };
 		37888F3029830097004FFA09 /* Heading3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37888F2F29830097004FFA09 /* Heading3.swift */; };
 		378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378991582961B5320002735C /* AppointmentOutcomeView.swift */; };
@@ -84,6 +83,9 @@
 		37DC64442986FFCA0044A44B /* NormalText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC64432986FFCA0044A44B /* NormalText.swift */; };
 		37DC6446298700AE0044A44B /* Heading2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6445298700AE0044A44B /* Heading2.swift */; };
 		37DC6448298701620044A44B /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6447298701620044A44B /* Subtitle.swift */; };
+		37DC644A2987062B0044A44B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC64492987062B0044A44B /* Note.swift */; };
+		37DC644E29871F310044A44B /* EnumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC644D29871F310044A44B /* EnumPicker.swift */; };
+		37DC6453298723B60044A44B /* InputContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6452298723B60044A44B /* InputContainer.swift */; };
 		37E5FE84298530B6009E535F /* Heading1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5FE83298530B6009E535F /* Heading1.swift */; };
 		37F566452972EC87000A455B /* DashboardGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566442972EC87000A455B /* DashboardGreetingView.swift */; };
 		37F566472972EFAB000A455B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566462972EFAB000A455B /* ColorExtension.swift */; };
@@ -135,7 +137,6 @@
 		37888F222982EBC9004FFA09 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		37888F242982EF91004FFA09 /* CustomRoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedCorner.swift; sourceTree = "<group>"; };
 		37888F272982F0AE004FFA09 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		37888F292982F51F004FFA09 /* AddProspectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProspectHeaderView.swift; sourceTree = "<group>"; };
 		37888F2D2982F88F004FFA09 /* PrimarySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySection.swift; sourceTree = "<group>"; };
 		37888F2F29830097004FFA09 /* Heading3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading3.swift; sourceTree = "<group>"; };
 		378991582961B5320002735C /* AppointmentOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentOutcomeView.swift; sourceTree = "<group>"; };
@@ -170,6 +171,9 @@
 		37DC64432986FFCA0044A44B /* NormalText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalText.swift; sourceTree = "<group>"; };
 		37DC6445298700AE0044A44B /* Heading2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading2.swift; sourceTree = "<group>"; };
 		37DC6447298701620044A44B /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
+		37DC64492987062B0044A44B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		37DC644D29871F310044A44B /* EnumPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPicker.swift; sourceTree = "<group>"; };
+		37DC6452298723B60044A44B /* InputContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContainer.swift; sourceTree = "<group>"; };
 		37E5FE83298530B6009E535F /* Heading1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading1.swift; sourceTree = "<group>"; };
 		37F566442972EC87000A455B /* DashboardGreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardGreetingView.swift; sourceTree = "<group>"; };
 		37F566462972EFAB000A455B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -402,7 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				37930F682984866800A5179A /* Text */,
-				37888F222982EBC9004FFA09 /* PrimaryTextField.swift */,
+				37DC644F29871FB10044A44B /* UserInput */,
 				37888F2D2982F88F004FFA09 /* PrimarySection.swift */,
 				37511EC929831FFD002E73EC /* PrimaryHeader.swift */,
 				3729E0FE295CE8710046526B /* SplitTextView.swift */,
@@ -425,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				37A2453C2976D3D1001523EF /* AddProspectView.swift */,
-				37888F292982F51F004FFA09 /* AddProspectHeaderView.swift */,
 			);
 			path = AddProspect;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				37DC6447298701620044A44B /* Subtitle.swift */,
 				37DC64432986FFCA0044A44B /* NormalText.swift */,
 				37DC643D2986DF2C0044A44B /* Subtext.swift */,
+				37DC64492987062B0044A44B /* Note.swift */,
 				37E5FE83298530B6009E535F /* Heading1.swift */,
 				37DC6445298700AE0044A44B /* Heading2.swift */,
 				37888F2F29830097004FFA09 /* Heading3.swift */,
@@ -522,6 +526,16 @@
 				37DC64352986D1120044A44B /* Greeting.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		37DC644F29871FB10044A44B /* UserInput */ = {
+			isa = PBXGroup;
+			children = (
+				37DC6452298723B60044A44B /* InputContainer.swift */,
+				37888F222982EBC9004FFA09 /* PrimaryTextField.swift */,
+				37DC644D29871F310044A44B /* EnumPicker.swift */,
+			);
+			path = UserInput;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,7 +613,6 @@
 				37DC64422986FD4C0044A44B /* ViewExtensionTextStyles.swift in Sources */,
 				37888F0D2982BB78004FFA09 /* SalesPartnerListRowView.swift in Sources */,
 				377D68E62959C53200F26670 /* ProspectsView.swift in Sources */,
-				37888F2A2982F51F004FFA09 /* AddProspectHeaderView.swift in Sources */,
 				377D68F42959DA0400F26670 /* Prospect.swift in Sources */,
 				37930F7329848B9700A5179A /* CircularProgressBar.swift in Sources */,
 				37888F282982F0AE004FFA09 /* Constants.swift in Sources */,
@@ -627,6 +640,7 @@
 				37930F652984828C00A5179A /* CircularImage.swift in Sources */,
 				373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */,
 				37888F132982BC68004FFA09 /* EventComparable.swift in Sources */,
+				37DC644E29871F310044A44B /* EnumPicker.swift in Sources */,
 				37511EC629831E36002E73EC /* ProspectListRowView.swift in Sources */,
 				377D68D72959C49600F26670 /* ContentView.swift in Sources */,
 				377D69042959EADF00F26670 /* PersonProtocol.swift in Sources */,
@@ -645,6 +659,7 @@
 				377D68D52959C49600F26670 /* FyeryApp.swift in Sources */,
 				377D68F82959E21200F26670 /* ProspectDetailView.swift in Sources */,
 				378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */,
+				37DC6453298723B60044A44B /* InputContainer.swift in Sources */,
 				37AB7366295F395000544554 /* PastAppointmentsView.swift in Sources */,
 				377D68FE2959E88900F26670 /* Event.swift in Sources */,
 				37888F172982BDD3004FFA09 /* Company.swift in Sources */,
@@ -663,6 +678,7 @@
 				37DC643A2986DACA0044A44B /* CalendarExtension.swift in Sources */,
 				37930F6D298488A000A5179A /* WidgetContainerView.swift in Sources */,
 				37888F032982AEA5004FFA09 /* PersonType.swift in Sources */,
+				37DC644A2987062B0044A44B /* Note.swift in Sources */,
 				37F566472972EFAB000A455B /* ColorExtension.swift in Sources */,
 				37A2453D2976D3D1001523EF /* AddProspectView.swift in Sources */,
 				37AB736C295F6E1800544554 /* BlankInitializerExtensions.swift in Sources */,

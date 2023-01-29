@@ -14,4 +14,5 @@ extension Color {
     static let action = Color("ActionColor")
     static let confirm = Color("ConfirmationColor")
     static let cancel = Color("CancellationColor")
+    static let input = Color("UserInputColor")
 }

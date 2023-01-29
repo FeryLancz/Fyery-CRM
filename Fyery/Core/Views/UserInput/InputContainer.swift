@@ -1,18 +1,16 @@
 //
-//  PrimaryTextField.swift
+//  InputContainer.swift
 //  Fyery
 //
-//  Created by Fery Lancz on 26.01.23.
+//  Created by Fery Lancz on 29.01.23.
 //
 
 import SwiftUI
 
-struct PrimaryTextField: View {
-    @Binding var input: String
+struct InputContainer<Content>: View where Content: View {
     var title: String
     var subtitle: String?
-    var placeholder = ""
-    var keyboardType: UIKeyboardType?
+    @ViewBuilder var content: () -> Content
     
     var body: some View {
         VStack(spacing: 0) {
@@ -21,9 +19,10 @@ struct PrimaryTextField: View {
                 Spacer()
             }
             .padding(.bottom, 3)
-            TextField(placeholder, text: $input)
-                .keyboardType(keyboardType ?? .default)
-                .padding(10)
+            content()
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .customAlign(.leading)
                 .background {
                     Color.gray.opacity(0.2)
                         .cornerRadius(7, corners: [.topLeft, .topRight])
@@ -33,9 +32,7 @@ struct PrimaryTextField: View {
                 .foregroundColor(.main)
             if let subtitle = subtitle {
                 HStack {
-                    Text(subtitle)
-                        .foregroundColor(.main.opacity(0.5))
-                        .font(.footnote)
+                    Note(subtitle)
                     Spacer()
                 }
                 .padding(.top, 1)
@@ -45,9 +42,10 @@ struct PrimaryTextField: View {
     }
 }
 
-struct PrimaryTextField_Previews: PreviewProvider {
+struct InputContainer_Previews: PreviewProvider {
     static var previews: some View {
-        PrimaryTextField(input: .constant("Text"), title: "Title", subtitle: "Subtitle")
-            .previewLayout(.sizeThatFits)
+        InputContainer(title: "Input Container") {
+            Text("aaaaa")
+        }
     }
 }
