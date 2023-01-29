@@ -13,28 +13,23 @@ struct ProspectListRowView: View {
     init(_ prospect: Prospect) { self.prospect = prospect }
     
     var body: some View {
-        PrimarySection(spacing: 2) {
+        PrimarySection(verticalSpacing: 2) {
             HStack {
                 ZStack {
-                    Text(prospect.initials)
-                        //.font(.title3)
+                    NormalText(prospect.initials)
                         .bold()
                     StandardCircle()
                 }
-                .foregroundColor(.main)
-                VStack(alignment: .leading, spacing: 5) {
+                VStack(alignment: .leading, spacing: 3) {
                     HStack(spacing: 5) {
-                        Text(prospect.firstName)
-                        Text(prospect.lastName)
+                        NormalText(prospect.firstName)
+                        NormalText(prospect.lastName)
                             .bold()
                         Spacer()
                     }
                     .font(.body)
                     .foregroundColor(.main)
-                    
-                    Text(prospect.lastContact.formatted(date: .complete, time: .omitted))
-                        .font(.footnote)
-                        .foregroundColor(.utility)
+                    Subtext(prospect.lastContact.formatted(date: .complete, time: .omitted))
                 }
                 Spacer()
                 Image(systemName: "chevron.forward")

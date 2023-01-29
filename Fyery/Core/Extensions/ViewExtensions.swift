@@ -29,7 +29,7 @@ extension View {
     }
     
     func customAlign(_ alignment: HorizontalAlignment) -> some View {
-        HStack {
+        HStack(spacing: 0) {
             if alignment == .trailing || alignment == .center {
                 Spacer()
             }
@@ -40,12 +40,7 @@ extension View {
         }
     }
     
-    func heading1() -> some View {
-        self
-            .font(.title3)
-            .fontWeight(.bold)
-        
-    }
+    
 }
 
 extension Image {

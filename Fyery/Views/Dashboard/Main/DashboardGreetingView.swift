@@ -9,16 +9,17 @@ import SwiftUI
 
 struct DashboardGreetingView: View {
     @Binding var name: String
-    @State var greeting = Greeting.appropriate()
+    @State var greeting = Greeting.timeDependent()
     
     var body: some View {
-        HStack {
+        HStack() {
             Title("\(greeting), \(name)")
+                .multilineTextAlignment(.leading)
             Image(systemName: "hand.wave")
                 .title()
         }
         .onAppear {
-            greeting = Greeting.appropriate()
+            greeting = Greeting.timeDependent()
         }
     }
 }

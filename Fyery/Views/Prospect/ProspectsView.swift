@@ -23,7 +23,6 @@ struct ProspectsView: View {
                     .buttonStyle(PlainButtonStyle())
                 }
                 .padding(.top, 10)
-                .padding(.horizontal, 15)
             }
             
             .toolbar {

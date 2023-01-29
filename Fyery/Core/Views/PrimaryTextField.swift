@@ -17,7 +17,7 @@ struct PrimaryTextField: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Title3(title)
+                Heading3(title)
                 Spacer()
             }
             .padding(.bottom, 3)
@@ -30,7 +30,7 @@ struct PrimaryTextField: View {
                 }
             Rectangle()
                 .frame(height: 3)
-                .foregroundColor(.utility)
+                .foregroundColor(.main)
             if let subtitle = subtitle {
                 HStack {
                     Text(subtitle)

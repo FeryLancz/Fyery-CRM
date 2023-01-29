@@ -13,11 +13,13 @@ struct StandardCircle: View {
             .stroke(lineWidth: 2)
             .frame(height: 40)
             .foregroundColor(.main)
+            .padding(1)
     }
 }
 
 struct StandardCircle_Previews: PreviewProvider {
     static var previews: some View {
         StandardCircle()
+            .previewLayout(.sizeThatFits)
     }
 }

@@ -1,13 +1,13 @@
 //
-//  Title.swift
+//  Subtitle.swift
 //  Fyery
 //
-//  Created by Fery Lancz on 27.01.23.
+//  Created by Fery Lancz on 29.01.23.
 //
 
 import SwiftUI
 
-struct Title: View {
+struct Subtitle: View {
     var text: String
     
     init(_ text: String) {
@@ -16,13 +16,13 @@ struct Title: View {
     
     var body: some View {
         Text(text)
-            .title()
+            .subtitle()
             .kerning(1.0)
     }
 }
 
-struct Title_Previews: PreviewProvider {
+struct Subtitle_Previews: PreviewProvider {
     static var previews: some View {
-        Title("Title")
+        Subtitle("Subtitle")
     }
 }

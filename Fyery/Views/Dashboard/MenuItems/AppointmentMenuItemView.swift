@@ -8,13 +8,30 @@
 import SwiftUI
 
 struct AppointmentMenuItemView: View {
+    @Binding var appointmentsToday: Int
+    @Binding var appointmentsThisWeek: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink(destination: AppointmentsView()) {
+            PrimarySection {
+                HStack() {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Heading2("Appointments")
+                        NormalText("\(appointmentsToday) today | \(appointmentsThisWeek) this week")
+                        NormalText("4 Appointments to classify")
+                    }
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .heading3()
+                }
+            }
+        }
     }
 }
 
 struct AppointmentMenuItem_Previews: PreviewProvider {
     static var previews: some View {
-        AppointmentMenuItemView()
+        AppointmentMenuItemView(appointmentsToday: .constant(2), appointmentsThisWeek: .constant(5))
+            .previewLayout(.sizeThatFits)
     }
 }

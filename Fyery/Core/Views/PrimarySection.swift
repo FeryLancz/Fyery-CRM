@@ -9,15 +9,14 @@ import SwiftUI
 
 struct PrimarySection<Content>: View where Content: View {
     var title: String?
-    var spacing = 10
+    var verticalSpacing = 10
+    var horizontalSpacing = 15
     @ViewBuilder var content: () -> Content
     
     var body: some View {
         VStack(alignment: .leading) {
             if let title = title {
-                Text(title.uppercased())
-                    .foregroundColor(.main)
-                    .bold()
+                Heading2(title.uppercased())
             }
             VStack(alignment: .leading) { content() }
                 .padding(10)
@@ -27,8 +26,8 @@ struct PrimarySection<Content>: View where Content: View {
                         .shadow(color: .gray.opacity(0.3), radius: 10, x: 0, y: 0)
                 }
         }
-        //.padding(.horizontal, 15)
-        .padding(.vertical, CGFloat(spacing))
+        .padding(.horizontal, CGFloat(horizontalSpacing))
+        .padding(.vertical, CGFloat(verticalSpacing))
     }
 }
 

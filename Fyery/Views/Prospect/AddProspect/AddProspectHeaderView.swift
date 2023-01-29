@@ -17,7 +17,7 @@ struct AddProspectHeaderView: View {
                 action()
             } label: {
                 Image(systemName: "checkmark.circle.fill")
-                    .foregroundColor(.green)
+                    .foregroundColor(.confirm)
                     .font(.title3)
                     .bold()
             }

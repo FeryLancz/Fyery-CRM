@@ -8,11 +8,5 @@
 import SwiftUI
 
 extension Text {
-    func title() -> Text {
-        self
-            .font(.title)
-            .fontWeight(.heavy)
-            .kerning(1.0)
-            .foregroundColor(.main)
-    }
+    
 }

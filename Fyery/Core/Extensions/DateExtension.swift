@@ -12,6 +12,14 @@ extension Date {
         self > Date()
     }
     
+    func isToday() -> Bool {
+        Calendar.current.isDateInToday(self)
+    }
+    
+    func isThisWeek() -> Bool {
+        Calendar.current.isDateInThisWeek(self)
+    }
+    
     func timeOfDay() -> TimeOfDay {
         let calendar = Calendar.current
         let hour = calendar.component(.hour, from: self)

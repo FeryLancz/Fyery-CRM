@@ -11,17 +11,7 @@ struct UnitWidget: View {
     @EnvironmentObject var user: SalesPartner
     
     var body: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 10) {
-                Title2("Current Unit Progress")
-                Title2("33% completed")
-                Title2("267 EH to go")
-            }
-            Spacer()
-            CircularProgressBar(progress: .constant(0.3))
-                .frame(maxHeight: 100)
-        }
-        
+        Text("TODO")
     }
 }
 

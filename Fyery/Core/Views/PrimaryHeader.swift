@@ -18,17 +18,14 @@ struct PrimaryHeader: View {
         HStack(spacing: 0) {
             CircularImage(systemName: logoSystemName)
                 .padding(.trailing, 7)
-            Text(title.uppercased())
-                .font(.title2)
+            Heading1(title.uppercased())
                 .fontWeight(!reverseBoldOrder ? .bold : .regular)
                 .padding(.trailing, space ? 7 : 0)
             if let title2 = title2 {
-                Text(title2.uppercased())
-                    .font(.title2)
+                Heading1(title2.uppercased())
                     .fontWeight(!reverseBoldOrder ? .regular : .bold)
             }
         }
-        .foregroundColor(.main)
     }
 }
 

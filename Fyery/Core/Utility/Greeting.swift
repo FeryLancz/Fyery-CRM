@@ -8,7 +8,7 @@
 import Foundation
 
 struct Greeting {
-    static func appropriate() -> String {
+    static func timeDependent() -> String {
         switch Date().timeOfDay() {
         case .morning:
             return "Good Morning"

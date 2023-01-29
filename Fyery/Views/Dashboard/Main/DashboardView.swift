@@ -15,8 +15,16 @@ struct DashboardView: View {
             ScrollView(.vertical) {
                 DashboardGreetingView(name: $user.firstName)
                     .customAlign(.leading)
+                    .padding(.horizontal, 15)
+                    .padding(.top, 15)
+                Subtitle("Have a great day!")
+                    .customAlign(.leading)
+                    .padding(.horizontal, 15)
+                AppointmentMenuItemView(appointmentsToday: $user.numberOfAppointmentsToday, appointmentsThisWeek: $user.numberOfAppointmentsThisWeek)
             }
-            .padding(15)
+            .refreshable {
+                updateMenuItems()
+            }
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     PrimaryHeader(title: "Dashboard", logoSystemName: "display")
@@ -25,6 +33,10 @@ struct DashboardView: View {
             .applyBackground()
             .navigationBarTitleDisplayMode(.inline)
         }
+    }
+    
+    func updateMenuItems() {
+        user.updateAppointments()
     }
 }
 
