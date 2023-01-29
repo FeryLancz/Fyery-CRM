@@ -10,6 +10,7 @@ import SwiftUI
 struct InputContainer<Content>: View where Content: View {
     var title: String
     var subtitle: String?
+    var alignment: HorizontalAlignment = .leading
     @ViewBuilder var content: () -> Content
     
     var body: some View {
@@ -20,9 +21,7 @@ struct InputContainer<Content>: View where Content: View {
             }
             .padding(.bottom, 3)
             content()
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .customAlign(.leading)
+                .customAlign(alignment)
                 .background {
                     Color.gray.opacity(0.2)
                         .cornerRadius(7, corners: [.topLeft, .topRight])
@@ -45,7 +44,7 @@ struct InputContainer<Content>: View where Content: View {
 struct InputContainer_Previews: PreviewProvider {
     static var previews: some View {
         InputContainer(title: "Input Container") {
-            Text("aaaaa")
+            Text("Input View goes here")
         }
     }
 }

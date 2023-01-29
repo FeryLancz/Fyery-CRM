@@ -18,6 +18,8 @@ struct PrimaryTextField: View {
         InputContainer(title: title, subtitle: subtitle) {
             TextField(placeholder, text: $input)
                 .keyboardType(keyboardType ?? .default)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
         }
     }
 }

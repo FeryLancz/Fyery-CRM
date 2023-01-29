@@ -1,33 +1,33 @@
 //
-//  PrimaryPicker.swift
+//  EnumPickerSegmented.swift
 //  Fyery
 //
-//  Created by Fery Lancz on 29.01.23.
+//  Created by Fery Lancz on 30.01.23.
 //
 
 import SwiftUI
 
-struct EnumPicker<T: Hashable & RawRepresentable & CaseIterable>: View where T.RawValue == String {
+struct EnumPickerSegmented<T: Hashable & RawRepresentable & CaseIterable>: View where T.RawValue == String {
     @Binding var selection: T
     var title: String
     var subtitle: String?
     
     var body: some View {
-        InputContainer(title: title, subtitle: subtitle) {
+        InputContainer(title: title, subtitle: subtitle, alignment: .center) {
             Picker(selection: $selection, label: Text(title)) {
                 ForEach(Array(T.allCases), id: \.self) {
                     Text($0.rawValue).tag($0)
                 }
             }
             .tint(.input)
-            .pickerStyle(.menu)
+            .pickerStyle(.segmented)
         }
     }
 }
 
-struct EnumPicker_Previews: PreviewProvider {
+struct EnumPickerSegmented_Previews: PreviewProvider {
     static var previews: some View {
-        EnumPicker(selection: .constant(ContactType.relative), title: "Enum Picker")
+        EnumPickerSegmented(selection: .constant(PersonType.male), title: "Person Type")
             .previewLayout(.sizeThatFits)
     }
 }

@@ -8,7 +8,6 @@
 import Foundation
 
 class Prospect: Person, Identifiable, ObservableObject {
-    
     var phoneNumber: String
     var type: PersonType
     var firstName: String

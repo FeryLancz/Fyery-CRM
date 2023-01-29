@@ -30,6 +30,14 @@ extension SalesPartner {
             currentUnitsMonthly / goalUnitsMonthly
         }
     }
+    
+    var availableContactors: [Prospect] {
+        self.prospects + [self] + self.salesPartners
+    }
+    
+    var availableAdvisors: [SalesPartner] {
+        [self] + self.salesPartners
+    }
 
     func addAppointment(_ appointment: Appointment) {
         appointments.append(appointment)
