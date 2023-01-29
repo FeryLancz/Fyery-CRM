@@ -18,9 +18,9 @@ extension Date {
         switch hour {
         case 5..<12:
             return .morning
-        case 12..<17:
+        case 12..<18:
             return .afternoon
-        case 17..<22:
+        case 18..<22:
             return .evening
         default:
             return .night

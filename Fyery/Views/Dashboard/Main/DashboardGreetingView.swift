@@ -8,32 +8,24 @@
 import SwiftUI
 
 struct DashboardGreetingView: View {
-    @ObservedObject var user: SalesPartner
-    var greeting: String {
-        switch Date().timeOfDay() {
-        case .morning:
-            return "Good Morning"
-        case .afternoon:
-            return "Hello"
-        case .evening:
-            return "Good Evening"
-        case .night:
-            return "Good Night"
-        }
-    }
+    @Binding var name: String
+    @State var greeting = Greeting.appropriate()
     
     var body: some View {
         HStack {
-            Title("\(greeting), \(user.firstName)")
+            Title("\(greeting), \(name)")
             Image(systemName: "hand.wave")
                 .title()
+        }
+        .onAppear {
+            greeting = Greeting.appropriate()
         }
     }
 }
 
 struct DashboardGreetingView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardGreetingView(user: SalesPartner(generateTestData: true))
+        DashboardGreetingView(name: .constant("Fery"))
             .previewLayout(.sizeThatFits)
     }
 }

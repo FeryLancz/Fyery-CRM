@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WidgetContainer: View {
+struct WidgetContainerView: View {
     @State var selectedTab = 0
     var body: some View {
         
@@ -26,7 +26,7 @@ struct WidgetContainer: View {
 
 struct WidgetContainer_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetContainer()
+        WidgetContainerView()
             .previewLayout(.sizeThatFits)
     }
 }
