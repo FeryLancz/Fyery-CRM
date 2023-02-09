@@ -12,8 +12,11 @@ extension Prospect {
         // TODO: chnage function to return lastest event that is communication related
         return Date() - 60*60*24*3
     }
-    var contectorFullName: String {
-        return "Fery Lancz"
+    var contactorFullName: String {
+        return contactor?.fullName ?? "-"
+    }
+    var advisorFullName: String {
+        return advisor?.fullName ?? "EFS-AG"
     }
     var initials: String {
         if let fi = firstName.first, let li = lastName.first {

@@ -16,7 +16,7 @@ struct ProspectsView: View {
         NavigationStack {
             ScrollView(.vertical) {
                 ForEach(user.prospects) { prospect in
-                    NavigationLink(destination: ProspectDetailView(prospect: prospect)) {
+                    NavigationLink(destination: NewProspectDetailView(prospect: prospect)) {
                         ProspectListRowView(prospect)
                             
                     }

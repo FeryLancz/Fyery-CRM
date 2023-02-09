@@ -19,6 +19,7 @@ struct PrimarySection<Content>: View where Content: View {
                 Heading2(title.uppercased())
             }
             VStack(alignment: .leading) { content() }
+                .frame(maxWidth: .infinity)
                 .padding(10)
                 .background {
                     RoundedRectangle(cornerRadius: 10)

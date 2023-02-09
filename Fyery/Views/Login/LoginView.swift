@@ -20,12 +20,12 @@ struct LoginView: View {
             Image("logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 200)
+                .frame(width: 100)
             
             Title("FYERY")
             TextField(
-              "Email Address",
-              text: $email
+                "Email Address",
+                text: $email
             )
             .textContentType(.emailAddress)
             .textInputAutocapitalization(.never)
@@ -34,10 +34,10 @@ struct LoginView: View {
             .padding()
             .background(Color.main.opacity(0.2))
             .clipShape(Capsule())
-
+            
             SecureField(
-              "Password",
-              text: $password
+                "Password",
+                text: $password
             )
             .textContentType(.password)
             .textInputAutocapitalization(.never)

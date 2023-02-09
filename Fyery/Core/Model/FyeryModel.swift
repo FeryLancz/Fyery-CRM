@@ -43,11 +43,6 @@ class FyeryModel: ObservableObject {
     }
 }
 
-final class AuthenticationModel: ObservableObject {
-    
-    
-}
-
 enum LoginResult: String {
     case success
     case invalidCredentials

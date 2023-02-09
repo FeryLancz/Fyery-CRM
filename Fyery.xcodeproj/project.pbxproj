@@ -14,6 +14,8 @@
 		373AEBB7296343F3003B7FB6 /* ConceptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */; };
 		373AEBB929634754003B7FB6 /* AddProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AEBB829634754003B7FB6 /* AddProposalView.swift */; };
 		374C5370298BF5C400A3D172 /* FyeryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C536F298BF5C400A3D172 /* FyeryModel.swift */; };
+		374C5372298C21B000A3D172 /* NewProspectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C5371298C21B000A3D172 /* NewProspectDetailView.swift */; };
+		374C5374298C5CBA00A3D172 /* RoundedImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C5373298C5CBA00A3D172 /* RoundedImageButton.swift */; };
 		37511EC229831B8D002E73EC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37511EC129831B8D002E73EC /* Colors.xcassets */; };
 		37511EC629831E36002E73EC /* ProspectListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37511EC529831E36002E73EC /* ProspectListRowView.swift */; };
 		37511ECA29831FFD002E73EC /* PrimaryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37511EC929831FFD002E73EC /* PrimaryHeader.swift */; };
@@ -56,6 +58,7 @@
 		378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378991582961B5320002735C /* AppointmentOutcomeView.swift */; };
 		3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1BE29609F7500E15ACD /* ConceptsView.swift */; };
 		3789F1CA2961A6C100E15ACD /* StandardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789F1C92961A6C100E15ACD /* StandardEvents.swift */; };
+		378A08FD2992ACC00047B6B2 /* FyeryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A08FC2992ACC00047B6B2 /* FyeryTabView.swift */; };
 		37930F632984820400A5179A /* StandardCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37930F622984820400A5179A /* StandardCircle.swift */; };
 		37930F652984828C00A5179A /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37930F642984828C00A5179A /* CircularImage.swift */; };
 		37930F672984862400A5179A /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37930F662984862400A5179A /* Title.swift */; };
@@ -97,6 +100,12 @@
 		37DC6457298726180044A44B /* PickableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6456298726180044A44B /* PickableProtocol.swift */; };
 		37DC6459298726D50044A44B /* ProspectExtensionPickable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC6458298726D50044A44B /* ProspectExtensionPickable.swift */; };
 		37DC645B2987357B0044A44B /* EnumPickerSegmented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC645A2987357B0044A44B /* EnumPickerSegmented.swift */; };
+		37E41F192995365E00134B50 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E41F182995365E00134B50 /* CallView.swift */; };
+		37E41F1B299542BA00134B50 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E41F1A299542BA00134B50 /* NumberButton.swift */; };
+		37E41F1D299542DF00134B50 /* CallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E41F1C299542DF00134B50 /* CallButton.swift */; };
+		37E41F1F2995430700134B50 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E41F1E2995430700134B50 /* DeleteButton.swift */; };
+		37E41F212995436300134B50 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E41F202995436300134B50 /* Call.swift */; };
+		37E41F23299546A800134B50 /* CallPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E41F22299546A800134B50 /* CallPad.swift */; };
 		37E5FE84298530B6009E535F /* Heading1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E5FE83298530B6009E535F /* Heading1.swift */; };
 		37F566452972EC87000A455B /* DashboardGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566442972EC87000A455B /* DashboardGreetingView.swift */; };
 		37F566472972EFAB000A455B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F566462972EFAB000A455B /* ColorExtension.swift */; };
@@ -111,6 +120,8 @@
 		373AEBB6296343F3003B7FB6 /* ConceptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptDetailView.swift; sourceTree = "<group>"; };
 		373AEBB829634754003B7FB6 /* AddProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProposalView.swift; sourceTree = "<group>"; };
 		374C536F298BF5C400A3D172 /* FyeryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryModel.swift; sourceTree = "<group>"; };
+		374C5371298C21B000A3D172 /* NewProspectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProspectDetailView.swift; sourceTree = "<group>"; };
+		374C5373298C5CBA00A3D172 /* RoundedImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageButton.swift; sourceTree = "<group>"; };
 		37511EC129831B8D002E73EC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		37511EC529831E36002E73EC /* ProspectListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectListRowView.swift; sourceTree = "<group>"; };
 		37511EC929831FFD002E73EC /* PrimaryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryHeader.swift; sourceTree = "<group>"; };
@@ -154,6 +165,7 @@
 		378991582961B5320002735C /* AppointmentOutcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentOutcomeView.swift; sourceTree = "<group>"; };
 		3789F1BE29609F7500E15ACD /* ConceptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptsView.swift; sourceTree = "<group>"; };
 		3789F1C92961A6C100E15ACD /* StandardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardEvents.swift; sourceTree = "<group>"; };
+		378A08FC2992ACC00047B6B2 /* FyeryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryTabView.swift; sourceTree = "<group>"; };
 		37930F622984820400A5179A /* StandardCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCircle.swift; sourceTree = "<group>"; };
 		37930F642984828C00A5179A /* CircularImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		37930F662984862400A5179A /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
@@ -194,6 +206,12 @@
 		37DC6456298726180044A44B /* PickableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickableProtocol.swift; sourceTree = "<group>"; };
 		37DC6458298726D50044A44B /* ProspectExtensionPickable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectExtensionPickable.swift; sourceTree = "<group>"; };
 		37DC645A2987357B0044A44B /* EnumPickerSegmented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPickerSegmented.swift; sourceTree = "<group>"; };
+		37E41F182995365E00134B50 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		37E41F1A299542BA00134B50 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		37E41F1C299542DF00134B50 /* CallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallButton.swift; sourceTree = "<group>"; };
+		37E41F1E2995430700134B50 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		37E41F202995436300134B50 /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		37E41F22299546A800134B50 /* CallPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallPad.swift; sourceTree = "<group>"; };
 		37E5FE83298530B6009E535F /* Heading1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading1.swift; sourceTree = "<group>"; };
 		37F566442972EC87000A455B /* DashboardGreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardGreetingView.swift; sourceTree = "<group>"; };
 		37F566462972EFAB000A455B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -253,6 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				377D68F72959E21200F26670 /* ProspectDetailView.swift */,
+				374C5371298C21B000A3D172 /* NewProspectDetailView.swift */,
+				374C5373298C5CBA00A3D172 /* RoundedImageButton.swift */,
 			);
 			path = ProspectDetail;
 			sourceTree = "<group>";
@@ -316,8 +336,10 @@
 				377D68EE2959D9A700F26670 /* Prospect */,
 				37511EC829831EA5002E73EC /* Event */,
 				377D68EF2959D9AC00F26670 /* Client */,
+				37E41F172995364F00134B50 /* Call */,
 				377D68F02959D9B200F26670 /* SalesPartner */,
 				377D68F12959D9B800F26670 /* Account */,
+				378A08FC2992ACC00047B6B2 /* FyeryTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -490,8 +512,8 @@
 			children = (
 				37AB73732960216E00544554 /* Concept.swift */,
 				37AB73712960211F00544554 /* Proposal.swift */,
-				37888F162982BDD3004FFA09 /* Company.swift */,
 				37888F182982BDEE004FFA09 /* ProposalType.swift */,
+				37888F162982BDD3004FFA09 /* Company.swift */,
 				37888F1A2982BDFF004FFA09 /* ContractDivision.swift */,
 			);
 			path = BusinessLogic;
@@ -569,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				37DC64352986D1120044A44B /* Greeting.swift */,
+				37E41F202995436300134B50 /* Call.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -583,6 +606,18 @@
 				37DC6454298725BA0044A44B /* ArrayPicker.swift */,
 			);
 			path = UserInput;
+			sourceTree = "<group>";
+		};
+		37E41F172995364F00134B50 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				37E41F182995365E00134B50 /* CallView.swift */,
+				37E41F22299546A800134B50 /* CallPad.swift */,
+				37E41F1A299542BA00134B50 /* NumberButton.swift */,
+				37E41F1C299542DF00134B50 /* CallButton.swift */,
+				37E41F1E2995430700134B50 /* DeleteButton.swift */,
+			);
+			path = Call;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -665,9 +700,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				377D69062959EF4200F26670 /* AppointmentsView.swift in Sources */,
+				37E41F212995436300134B50 /* Call.swift in Sources */,
 				37DC64422986FD4C0044A44B /* ViewExtensionTextStyles.swift in Sources */,
 				37888F0D2982BB78004FFA09 /* SalesPartnerListRowView.swift in Sources */,
 				377D68E62959C53200F26670 /* ProspectsView.swift in Sources */,
+				37E41F192995365E00134B50 /* CallView.swift in Sources */,
 				377D68F42959DA0400F26670 /* Prospect.swift in Sources */,
 				37930F7329848B9700A5179A /* CircularProgressBar.swift in Sources */,
 				37888F282982F0AE004FFA09 /* Constants.swift in Sources */,
@@ -691,7 +728,10 @@
 				377D68E82959C53800F26670 /* ClientView.swift in Sources */,
 				377D68EA2959C57300F26670 /* SalesPartnerView.swift in Sources */,
 				37888F3029830097004FFA09 /* Heading3.swift in Sources */,
+				374C5372298C21B000A3D172 /* NewProspectDetailView.swift in Sources */,
 				37AB73722960211F00544554 /* Proposal.swift in Sources */,
+				37E41F1B299542BA00134B50 /* NumberButton.swift in Sources */,
+				37E41F1D299542DF00134B50 /* CallButton.swift in Sources */,
 				37888EFF2982AD4E004FFA09 /* MaritalStatus.swift in Sources */,
 				37DC642F2986CE4E0044A44B /* SalesPartnerCP.swift in Sources */,
 				37930F652984828C00A5179A /* CircularImage.swift in Sources */,
@@ -707,6 +747,7 @@
 				37888F152982BCF6004FFA09 /* AppointmentType.swift in Sources */,
 				37DC64402986E4910044A44B /* SalesPartnerUpdateMethods.swift in Sources */,
 				37930F672984862400A5179A /* Title.swift in Sources */,
+				378A08FD2992ACC00047B6B2 /* FyeryTabView.swift in Sources */,
 				37888F062982B496004FFA09 /* ProspectExtensionEquatable.swift in Sources */,
 				37DC645B2987357B0044A44B /* EnumPickerSegmented.swift in Sources */,
 				37F8739B29638136006C7C7E /* ConceptClassificationView.swift in Sources */,
@@ -718,10 +759,12 @@
 				377D68D52959C49600F26670 /* FyeryApp.swift in Sources */,
 				377D68F82959E21200F26670 /* ProspectDetailView.swift in Sources */,
 				378991592961B5320002735C /* AppointmentOutcomeView.swift in Sources */,
+				374C5374298C5CBA00A3D172 /* RoundedImageButton.swift in Sources */,
 				37DC6453298723B60044A44B /* InputContainer.swift in Sources */,
 				37AB7366295F395000544554 /* PastAppointmentsView.swift in Sources */,
 				377D68FE2959E88900F26670 /* Event.swift in Sources */,
 				37888F172982BDD3004FFA09 /* Company.swift in Sources */,
+				37E41F1F2995430700134B50 /* DeleteButton.swift in Sources */,
 				37930F752984911600A5179A /* AppointmentWidget.swift in Sources */,
 				374C5370298BF5C400A3D172 /* FyeryModel.swift in Sources */,
 				3729E103295CF0CF0046526B /* EventDetailView.swift in Sources */,
@@ -729,6 +772,7 @@
 				37888F0F2982BC1C004FFA09 /* AddSalesPartnerView.swift in Sources */,
 				3729E101295CEA5D0046526B /* ConfirmationCallOutcomeView.swift in Sources */,
 				37D7E43C295A5BB500EBD9B9 /* AppointmentDetailView.swift in Sources */,
+				37E41F23299546A800134B50 /* CallPad.swift in Sources */,
 				3789F1BF29609F7500E15ACD /* ConceptsView.swift in Sources */,
 				37F566452972EC87000A455B /* DashboardGreetingView.swift in Sources */,
 				37DC64362986D1120044A44B /* Greeting.swift in Sources */,

@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct AddProspectView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var user: SalesPartner
+    
+    @State private var callOutcomeViewShowing = false
+    
+    @State private var newProspect: Prospect = Prospect()
+    
     @State private var personType: PersonType = .male
     @State private var firstName = ""
     @State private var lastName = ""
-    @State private var phoneNumber = ""
+    @State var phoneNumber = ""
     
     @State private var contactType: ContactType = .relative
     @State private var contactor: Prospect = Prospect(type: .female, firstName: "Error in", lastName: "add prospect ", phoneNumber: "contact by picker", contactor: nil, contactType: .relative, advisor: nil)
@@ -25,6 +30,8 @@ struct AddProspectView: View {
     @State private var maritalStatus: MaritalStatus = .single
     @State private var sp = false
     @State private var note = ""
+    
+    var presentedFromCallView = false
     
     var buttonDisabled: Bool {
         firstName.isEmpty && lastName.isEmpty || phoneNumber.isEmpty
@@ -80,7 +87,7 @@ struct AddProspectView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        let newProspect = Prospect(type: personType, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, contactor: contactor, contactType: contactType, advisor: advisor)
+                        newProspect = Prospect(type: personType, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, contactor: contactor, contactType: contactType, advisor: advisor)
                         if !job.isEmpty { newProspect.job = job }
                         if !children.isEmpty { newProspect.childrenNote = children }
                         newProspect.maritalStatus = maritalStatus
@@ -88,7 +95,13 @@ struct AddProspectView: View {
                         if !note.isEmpty { newProspect.note = note }
                             
                         user.addProspect(newProspect)
-                        dismiss()
+                        
+                        if !presentedFromCallView {
+                            dismiss()
+                        } else {
+                            callOutcomeViewShowing = true
+                            
+                        }
                     } label: {
                         Image(systemName: "checkmark.circle.fill")
                             .foregroundColor(buttonDisabled ? .gray : .confirm)
@@ -98,7 +111,14 @@ struct AddProspectView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
+            .sheet(isPresented: $callOutcomeViewShowing, onDismiss: dismissView) {
+                CallOutcomeView(prospect: newProspect)
+            }
         }
+    }
+    
+    func dismissView() {
+        dismiss()
     }
 }
 
