@@ -51,7 +51,7 @@ extension SalesPartner {
         prospects.sort(by: <)
     }
     
-    func getConcepts(for person: Person) -> [Concept] {
+    func getConcepts(for person: Prospect) -> [Concept] {
         var concepts: [Concept] = []
         for appointment in self.appointments where appointment.participant === person && appointment.concept != nil {
             concepts.append(appointment.concept!)
@@ -66,11 +66,11 @@ extension SalesPartner {
         return Appointment()
     }
     
-    func findPerson(_ person: Person) -> Person? {
+    func findPerson(_ person: Prospect) -> Prospect? {
         self.prospects.first(where: { $0 === person })
     }
     
-    func closeConsulting(for probablePerson: Person, in appointment: Appointment) {
+    func closeConsulting(for probablePerson: Prospect, in appointment: Appointment) {
         guard let concept = appointment.concept else { return }
         guard let person = findPerson(probablePerson) else { return }
         for proposal in concept.proposals { proposal.selection = proposal.preSelection }

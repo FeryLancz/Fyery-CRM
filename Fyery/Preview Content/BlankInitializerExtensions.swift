@@ -22,7 +22,19 @@ extension Appointment {
 
 extension Prospect {
     convenience init() {
-        self.init(type: .male, firstName: "Hans", lastName: "Peter", phoneNumber: "+4369981698213", contactor: nil, contactType: .colleague, advisor: nil)
+        self.init(type: .male, firstName: "Hans", lastName: "Peter", phoneNumber: "+4369981698213", contactor: nil, contactType: .colleague)
+        
+        self.job = "Programmer"
+        self.approximateAge = 26
+        self.childrenNote = "2 year old boy"
+        self.maritalStatus = .married
+        self.note = "old work colleague"
+        
+        self.email = "hans.peter@gmail.com"
+        
+        self.zip = 1030
+        self.city = "Wien"
+        self.street = "Rabengasse 6"
     }
 }
 

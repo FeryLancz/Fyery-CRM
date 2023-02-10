@@ -9,15 +9,15 @@ import Foundation
 import Firebase
 
 class FyeryModel: ObservableObject {
-    @Published var fuser: SalesPartner?
+    @Published var user: SalesPartner?
     
-    var user: User? {
+    var firebaseUser: User? {
         didSet {
             objectWillChange.send()
         }
     }
     var signedIn: Bool {
-        user != nil
+        firebaseUser != nil
     }
     
     func signIn(email: String, password: String) {
@@ -38,7 +38,7 @@ class FyeryModel: ObservableObject {
             guard let self = self else {
                 return
             }
-            self.user = user
+            self.firebaseUser = user
         }
     }
 }

@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            if model.user == nil  {
+            if model.firebaseUser == nil  {
                 LoginView(model: model)
             } else {
                 MainTabView(model: model)

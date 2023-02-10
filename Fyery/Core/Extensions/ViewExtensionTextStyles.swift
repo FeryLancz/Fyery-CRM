@@ -57,4 +57,11 @@ extension View {
             .font(.subheadline)
             .foregroundColor(.main)
     }
+    
+    func heading4() -> some View {
+        self
+            .font(.footnote)
+            .fontWeight(.light)
+            .foregroundColor(.utility)
+    }
 }

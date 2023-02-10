@@ -8,6 +8,7 @@
 import Foundation
 
 enum ContactType: String, CaseIterable {
+    case notSelected = "select contact type"
     case relative
     case friend
     case colleague

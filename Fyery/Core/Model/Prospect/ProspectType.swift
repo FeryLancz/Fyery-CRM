@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PersonType: String, CaseIterable {
+enum ProspectType: String, CaseIterable {
     case male
     case female
 }

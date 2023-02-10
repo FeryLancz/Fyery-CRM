@@ -42,7 +42,7 @@ struct ProspectDetailView: View {
             
             Section("Appointments") {
                 let appointments = user.appointments.filter { appointment in
-                    appointment.participant as! Prospect == prospect
+                    appointment.participant == prospect
                 }
                 ForEach(appointments) { appointment in
                     AppointmentCellView(appointment)
@@ -69,20 +69,7 @@ struct SimpleConceptCellView: View {
     }
 }
 
-struct EventCellView: View {
-    @ObservedObject var event: Event
-    var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(event.description)
-                Text(event.title)
-                    .font(.caption)
-            }
-            Spacer()
-            Text(event.date.formatted())
-        }
-    }
-}
+
 
 struct ProspectDetailView_Previews: PreviewProvider {
     static var previews: some View {

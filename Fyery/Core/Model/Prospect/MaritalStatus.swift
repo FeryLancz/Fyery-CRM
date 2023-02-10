@@ -8,6 +8,7 @@
 import Foundation
 
 enum MaritalStatus: String, CaseIterable {
+    case notSelected = "select marital status"
     case single
     case relationship
     case married

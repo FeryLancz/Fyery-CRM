@@ -14,5 +14,5 @@ class SalesPartner: Prospect {
     
     @Published var prospects:[Prospect] = []
     @Published var salesPartners: [SalesPartner] = []
-    @Published var appointments: [Appointment] = []
+    //@Published var appointments: [Appointment] = []
 }

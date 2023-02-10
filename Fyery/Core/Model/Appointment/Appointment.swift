@@ -27,8 +27,8 @@ class Appointment: ObservableObject, Identifiable {
     
     @Published var concept: Concept?
     
-    private weak var _participant: Person?
-    var participant: Person {
+    private weak var _participant: Prospect?
+    var participant: Prospect {
         get {
             if let p = _participant {
                 return p
@@ -41,7 +41,7 @@ class Appointment: ObservableObject, Identifiable {
         participant.fullName
     }
     
-    init(type: AppointmentType, date: Date, participant: Person) {
+    init(type: AppointmentType, date: Date, participant: Prospect) {
         self.type = type
         self.date = date
         self.participant = participant

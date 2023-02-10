@@ -15,26 +15,33 @@ struct AddProspectView: View {
     
     @State private var newProspect: Prospect = Prospect()
     
-    @State private var personType: PersonType = .male
+    @State private var personType: ProspectType = .male
     @State private var firstName = ""
     @State private var lastName = ""
     @State var phoneNumber = ""
     
-    @State private var contactType: ContactType = .relative
-    @State private var contactor: Prospect = Prospect(type: .female, firstName: "Error in", lastName: "add prospect ", phoneNumber: "contact by picker", contactor: nil, contactType: .relative, advisor: nil)
+    @State private var contactType: ContactType = .notSelected
+    @State private var contactor: Prospect = Prospect(type: .female, firstName: "Error in", lastName: "add prospect ", phoneNumber: "contact by picker", contactor: nil, contactType: .relative)
     @State private var advisor = Prospect()
     
     @State private var job = ""
-    @State private var approximateAge = 0
+    @State private var approximateAge = ""
     @State private var children = ""
-    @State private var maritalStatus: MaritalStatus = .single
+    @State private var maritalStatus: MaritalStatus = .notSelected
     @State private var sp = false
     @State private var note = ""
+    
+    @State private var zipCode = ""
+    @State private var city = ""
+    @State private var street = ""
+    
+    @State private var email = ""
+    @State private var birthday = Date()
     
     var presentedFromCallView = false
     
     var buttonDisabled: Bool {
-        firstName.isEmpty && lastName.isEmpty || phoneNumber.isEmpty
+        firstName.isEmpty && lastName.isEmpty || phoneNumber.isEmpty || contactType == .notSelected
     }
     
     var body: some View {
@@ -50,36 +57,35 @@ struct AddProspectView: View {
                 PrimarySection(title: "Contact Information", verticalSpacing: 0) {
                     EnumPicker(selection: $contactType, title: "Contact Type")
                     ArrayPicker(selection: $contactor, array: user.availableContactors, title: "Contact by")
-                    ArrayPicker(selection: $advisor, array: user.availableAdvisors, title: "Advisor")
+                    //ArrayPicker(selection: $advisor, array: user.availableAdvisors, title: "Advisor")
                 }
                 
                 PrimarySection(title: "Details") {
                     PrimaryTextField(input: $job, title: "Current Job", placeholder: "Programmer")
-                    //PrimaryTextField(input: $approximateAge, title: "Approximate Age")
+                    PrimaryTextField(input: $approximateAge, title: "Approximate Age", placeholder: "26")
                     PrimaryTextField(input: $children, title: "Children / Age note", placeholder: "2 y.o. and 5 y.o.")
                     EnumPicker(selection: $maritalStatus, title: "Marital Status")
-                    Divider()
-                        .tint(.main)
-                    Toggle(isOn: $sp) {
-                        Heading3("Interest in additional income")
-                    }
-                    .tint(.main)
-                    Divider()
-                        .tint(.main)
+//                    Divider()
+//                        .tint(.main)
+//                    Toggle(isOn: $sp) {
+//                        Heading3("Interest in additional income")
+//                    }
+//                    .tint(.main)
+//                    Divider()
+//                        .tint(.main)
                     PrimaryTextField(input: $note, title: "Note")
                 }
                 
-                // TODO: - Expandable Sections for Address and Details
-//                PrimarySection(title: "Address") {
-//                    PrimaryTextField(input: $firstName, title: "ZIP Code")
-//                    PrimaryTextField(input: $firstName, title: "City")
-//                    PrimaryTextField(input: $firstName, title: "Street")
-//                }
-//
-//                PrimarySection(title: "Extra") {
-//                    PrimaryTextField(input: $firstName, title: "E-Mail address")
-//                    PrimaryTextField(input: $firstName, title: "Birthday")
-//                }
+                ExpandableSection(title: "Address") {
+                    PrimaryTextField(input: $zipCode, title: "ZIP Code", placeholder: "1010")
+                    PrimaryTextField(input: $city, title: "City", placeholder: "Wien")
+                    PrimaryTextField(input: $street, title: "Street", placeholder: "Straße 238/26")
+                }
+                
+                ExpandableSection(title: "E-Mail & Birthday") {
+                    PrimaryTextField(input: $firstName, title: "E-Mail address", placeholder: "max.muster@gmail.com")
+                    PrimaryDatePicker(title: "Birthday", date: $birthday)
+                }
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -87,13 +93,20 @@ struct AddProspectView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        newProspect = Prospect(type: personType, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, contactor: contactor, contactType: contactType, advisor: advisor)
+                        newProspect = Prospect(type: personType, firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, contactor: contactor, contactType: contactType)
                         if !job.isEmpty { newProspect.job = job }
+                        if !approximateAge.isEmpty { newProspect.approximateAge = Int(approximateAge) }
                         if !children.isEmpty { newProspect.childrenNote = children }
-                        newProspect.maritalStatus = maritalStatus
-                        newProspect.eligibleAsSalesPartner = sp
+                        if maritalStatus != .notSelected { newProspect.maritalStatus = maritalStatus }
                         if !note.isEmpty { newProspect.note = note }
-                            
+                        
+                        if !zipCode.isEmpty { newProspect.zip = Int(zipCode) }
+                        if !city.isEmpty { newProspect.city = city }
+                        if !street.isEmpty { newProspect.street = street }
+                        
+                        if !email.isEmpty { newProspect.email = email }
+                        if !birthday.isToday() { newProspect.birthday = birthday }
+                        
                         user.addProspect(newProspect)
                         
                         if !presentedFromCallView {

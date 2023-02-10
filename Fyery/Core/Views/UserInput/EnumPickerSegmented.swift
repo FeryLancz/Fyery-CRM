@@ -27,7 +27,7 @@ struct EnumPickerSegmented<T: Hashable & RawRepresentable & CaseIterable>: View 
 
 struct EnumPickerSegmented_Previews: PreviewProvider {
     static var previews: some View {
-        EnumPickerSegmented(selection: .constant(PersonType.male), title: "Person Type")
+        EnumPickerSegmented(selection: .constant(ProspectType.male), title: "Person Type")
             .previewLayout(.sizeThatFits)
     }
 }

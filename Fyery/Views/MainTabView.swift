@@ -16,7 +16,7 @@ struct MainTabView: View {
                 .tag(0)
             TabItemView(title: "Prospects", systemName: "person.fill.viewfinder", idNumber: 1, content: AnyView(ProspectsView()))
                 .tag(1)
-            TabItemView(title: "Call", systemName: "phone", idNumber: 3, content: AnyView(CallView()))
+            TabItemView(title: "Call", systemName: "phone", idNumber: 3, content: AnyView(CallView(tabSelection: $selection)))
                 .tag(2)
             TabItemView(title: "Clients", systemName: "person.3.sequence.fill", idNumber: 2, content: AnyView(ClientView()))
                 .tag(3)

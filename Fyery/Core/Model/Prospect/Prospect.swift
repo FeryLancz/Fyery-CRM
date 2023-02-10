@@ -7,35 +7,34 @@
 
 import Foundation
 
-class Prospect: Person, Identifiable, ObservableObject {
-    var phoneNumber: String
-    var type: PersonType
+class Prospect: Identifiable, ObservableObject {
+    var type: ProspectType
     var firstName: String
     var lastName: String
+    var email: String?
+    var phoneNumber: String
+    
+    weak var contactor: Prospect?
+    var contactType: ContactType
     
     var job: String?
     var approximateAge: Int?
+    var birthday: Date?
     var childrenNote: String?
     var maritalStatus: MaritalStatus?
-    var eligibleAsSalesPartner: Bool?
     var note: String?
     
     var zip: Int?
     var city: String?
     var street: String?
     
-    var email: String?
-    var birthday: Date?
-    
-    weak var contactor: Person?
-    var contactType: ContactType
-    weak var advisor: Person?
-    
     @Published var events: [Event] = []
+    @Published var appointments: [Appointment] = []
     @Published var concepts: [Concept] = []
+    
     @Published var isCustomer = false
     
-    init(type: PersonType, firstName: String, lastName: String, phoneNumber: String, contactor: Person?, contactType: ContactType, advisor: Person?) {
+    init(type: ProspectType, firstName: String, lastName: String, phoneNumber: String, contactor: Prospect?, contactType: ContactType) {
         self.type = type
         self.firstName = firstName
         self.lastName = lastName
