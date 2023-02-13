@@ -9,7 +9,7 @@ import SwiftUI
 
 extension FyeryModel {
     func appScenePhaseChanged(to phase: ScenePhase) {
-        
+        print("phase change")
     }
     
     func callNumber(_ number: String, completionHandler completion: () -> Void) {
