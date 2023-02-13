@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                DashboardGreetingView(name: $user.firstName)
+                DashboardGreetingView(name: $model.user.firstName)
                     .customAlign(.leading)
                     .padding(.horizontal, 15)
                     .padding(.top, 15)
                 Subtitle("Have a great day!")
                     .customAlign(.leading)
                     .padding(.horizontal, 15)
-                AppointmentMenuItemView(appointmentsToday: $user.numberOfAppointmentsToday, appointmentsThisWeek: $user.numberOfAppointmentsThisWeek)
+                AppointmentMenuItemView(appointmentsToday: $model.user.numberOfAppointmentsToday, appointmentsThisWeek: $model.user.numberOfAppointmentsThisWeek)
+                Button("wirte data") {
+                    model.postThought()
+                }
             }
             .refreshable {
                 updateMenuItems()
@@ -36,13 +39,13 @@ struct DashboardView: View {
     }
     
     func updateMenuItems() {
-        user.updateAppointments()
+        model.user.updateAppointments()
     }
 }
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
-            .environmentObject(SalesPartner(generateTestData: true))
+            .environmentObject(FyeryModel())
     }
 }

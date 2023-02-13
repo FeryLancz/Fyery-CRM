@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AppointmentType: String {
+enum AppointmentType: String, Codable {
     case analysis = "Analysis"
     case consulting = "Consulting"
     case customerFolder = "Customer Folder"

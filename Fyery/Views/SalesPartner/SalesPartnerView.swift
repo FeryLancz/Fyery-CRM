@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct SalesPartnerView: View {
-    @EnvironmentObject private var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     @State private var addSalesPartnerViewShowing = false
     
     var body: some View {
         NavigationView {
-            List(user.salesPartners) { sp in
+            List(model.user.salesPartners) { sp in
                 SalesPartnerListRowView(sp: sp)
             }
             .largeNavigationTitle("Sales Partners")
@@ -38,6 +38,6 @@ struct SalesPartnerView: View {
 struct SalesPartnerView_Previews: PreviewProvider {
     static var previews: some View {
         SalesPartnerView()
-            .environmentObject(SalesPartner())
+            .environmentObject(FyeryModel())
     }
 }

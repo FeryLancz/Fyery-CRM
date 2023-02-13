@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum EventType: String {
+enum EventType: String, Codable {
     case userInput = "User Input"
     case callOnAppointment = "Call on Appointment"
     case confirmationCall = "Confirmation Call"

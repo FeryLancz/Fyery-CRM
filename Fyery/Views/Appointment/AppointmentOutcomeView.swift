@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppointmentOutcomeView: View {
     @Environment(\.dismiss) private var dismiss
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     @ObservedObject private var appointment: Appointment
     @State private var selectedOutcome: AppointmentOutcome = .performed
     @State private var selectedDate = Date()
@@ -90,7 +90,7 @@ struct AppointmentOutcomeView: View {
                                 appointment.addEvent(newEvent)
                                 appointment.isClassified = true
                                 let consultingAppointment = Appointment(type: .consulting, date: selectedDate, participant: appointment.participant)
-                                user.addAppointment(consultingAppointment)
+                                model.user.addAppointment(consultingAppointment)
                             case .noShow:
                                 let newEvent = Event(type: .appointmentNoShow, title: "Didn't show up to Analysis", description: "Didn't show up to Analysis")
                                 appointment.addEvent(newEvent)

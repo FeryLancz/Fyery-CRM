@@ -10,17 +10,21 @@ import SwiftUI
 struct CallView: View {
     @Environment(\.scenePhase) var scenePhase
     @Environment(\.isPresented) var isPresented
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
+    
+    
+    
     @Binding var tabSelection: Int
     @State var input = ""
     @State var addProspectShowing = false
     @State var callOutcomeShowing = false
+    @State var callPressed = false
     
     @State private var lastPhases: [ScenePhase] = []
     private let pattern: [ScenePhase] = [.active, .inactive, .active, .inactive, .background, .inactive, .active]
     
     var numberName: String? {
-        user.prospects.filter {
+        model.user.prospects.filter {
             $0.phoneNumber == input
         }
         .first?.fullName
@@ -41,7 +45,8 @@ struct CallView: View {
             Spacer()
             CallPad(input: $input) {
                 if input.count >= 5 {
-                    Call.callNumber(input)
+                    callPressed = true
+                    Phone.callNumber(input)
                 }
             }
             .padding(.bottom, 30)
@@ -50,18 +55,33 @@ struct CallView: View {
             AddProspectView(phoneNumber: input, presentedFromCallView: true)
         }
         .sheet(isPresented: $callOutcomeShowing) {
-            CallOutcomeView(prospect: user.prospects.filter { $0.phoneNumber == input }.first!)
+            CallOutcomeView(prospect: model.user.prospects.filter { $0.phoneNumber == input }.first!)
         }
         .onChange(of: scenePhase) { newPhase in
-            lastPhases.append(newPhase)
-            let toMatch = Array(lastPhases.suffix(pattern.count))
-            if toMatch == pattern && tabSelection == 2 {
-                if numberName != nil {
-                    callOutcomeShowing = true
-                } else {
-                    addProspectShowing = true
+            //print(newPhase)
+            if callPressed {
+                
+                lastPhases.append(newPhase)
+                let toMatch = Array(lastPhases.suffix(pattern.count))
+                if toMatch == pattern && tabSelection == 2 {
+                    callPressed.toggle()
+                    lastPhases = []
+                    if numberName != nil {
+                        callOutcomeShowing = true
+                    } else {
+                        addProspectShowing = true
+                    }
                 }
             }
+        }
+        .onAppear {
+            print("on Appear")
+        }
+        .onDisappear {
+            print("on Disappear")
+        }
+        .onChange(of: isPresented) { newVar in
+            print(newVar)
         }
     }
 }
@@ -69,6 +89,6 @@ struct CallView: View {
 struct CallView_Previews: PreviewProvider {
     static var previews: some View {
         CallView(tabSelection: .constant(2))
-            .environmentObject(SalesPartner())
+            .environmentObject(FyeryModel())
     }
 }

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ConceptsView: View {
-    @EnvironmentObject private var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     var body: some View {
-        List(user.appointments) { appointment in
+        List(model.user.appointments) { appointment in
             if let concept = appointment.concept {
                 NavigationLink(destination: ConceptDetailView(appointment: appointment, concept: concept)) {
                     ConceptCellView(appointment: appointment, concept: concept)
@@ -24,7 +24,7 @@ struct ConceptsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ConceptsView()
-                .environmentObject(SalesPartner())
+                .environmentObject(FyeryModel())
         }
     }
 }

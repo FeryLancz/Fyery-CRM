@@ -115,7 +115,7 @@ struct ConceptDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ConceptDetailView(appointment: Appointment(), concept: Concept(test: true))
-                .environmentObject(SalesPartner())
+                .environmentObject(FyeryModel())
         }
     }
 }

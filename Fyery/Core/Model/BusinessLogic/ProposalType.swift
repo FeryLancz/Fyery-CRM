@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ProposalType: String, CaseIterable {
+enum ProposalType: String, CaseIterable, Codable {
     case change = "Change"
     case newContract = "New Contract"
     case cancellation = "Cancellation"

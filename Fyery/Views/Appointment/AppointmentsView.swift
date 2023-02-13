@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct AppointmentsView: View {
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     @State var searchString: String = ""
     
     var body: some View {
         List {
             Section("Past Appointments") {
-                ForEach(user.appointments.filter { $0.date < Date() && !$0.isClassified }) { appointment in
+                ForEach(model.user.appointments.filter { $0.date < Date() && !$0.isClassified }) { appointment in
                     AppointmentCellView(appointment)
                 }
                 NavigationLink(destination: PastAppointmentsView()) {
@@ -23,7 +23,7 @@ struct AppointmentsView: View {
             }
             
             Section("Upcoming") {
-                ForEach(user.appointments.filter {$0.date >= Date() }) { appointment in
+                ForEach(model.user.appointments.filter {$0.date >= Date() }) { appointment in
                     AppointmentCellView(appointment)
                 }
             }
@@ -70,7 +70,7 @@ struct AppoinetmentsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             AppointmentsView()
-                .environmentObject(SalesPartner(generateTestData: true))
+                .environmentObject(FyeryModel())
         }
     }
 }

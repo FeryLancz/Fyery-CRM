@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProspectDetailView: View {
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     @ObservedObject var prospect: Prospect
     @State private var callOucomeShowing = false
     
@@ -33,15 +33,15 @@ struct ProspectDetailView: View {
             }
             
             Section("Concepts") {
-                ForEach(user.getConcepts(for: prospect)) { concept in
-                    NavigationLink(destination: ConceptDetailView(appointment: user.getAppointment(for: concept), concept: concept)) {
-                        ConceptCellView(appointment: user.getAppointment(for: concept), concept: concept)
+                ForEach(model.user.getConcepts(for: prospect)) { concept in
+                    NavigationLink(destination: ConceptDetailView(appointment: model.user.getAppointment(for: concept), concept: concept)) {
+                        ConceptCellView(appointment: model.user.getAppointment(for: concept), concept: concept)
                     }
                 }
             }
             
             Section("Appointments") {
-                let appointments = user.appointments.filter { appointment in
+                let appointments = model.user.appointments.filter { appointment in
                     appointment.participant == prospect
                 }
                 ForEach(appointments) { appointment in
@@ -75,7 +75,7 @@ struct ProspectDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ProspectDetailView(prospect: Prospect())
-                .environmentObject(SalesPartner())
+                .environmentObject(FyeryModel())
         }
     }
 }

@@ -38,6 +38,12 @@ extension Prospect {
     }
 }
 
+extension SalesPartner {
+    convenience init() {
+        self.init(type: .male, firstName: "Fery", lastName: "Lancz", phoneNumber: "06604463239")
+    }
+}
+
 extension Concept {
     convenience init(test: Bool) {
         self.init()

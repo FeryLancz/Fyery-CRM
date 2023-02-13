@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddProspectView: View {
     @Environment(\.dismiss) private var dismiss
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     
     @State private var callOutcomeViewShowing = false
     
@@ -56,8 +56,8 @@ struct AddProspectView: View {
                 
                 PrimarySection(title: "Contact Information", verticalSpacing: 0) {
                     EnumPicker(selection: $contactType, title: "Contact Type")
-                    ArrayPicker(selection: $contactor, array: user.availableContactors, title: "Contact by")
-                    //ArrayPicker(selection: $advisor, array: user.availableAdvisors, title: "Advisor")
+                    ArrayPicker(selection: $contactor, array: model.user.availableContactors, title: "Contact by")
+                    //ArrayPicker(selection: $advisor, array: model.user.availableAdvisors, title: "Advisor")
                 }
                 
                 PrimarySection(title: "Details") {
@@ -107,7 +107,7 @@ struct AddProspectView: View {
                         if !email.isEmpty { newProspect.email = email }
                         if !birthday.isToday() { newProspect.birthday = birthday }
                         
-                        user.addProspect(newProspect)
+                        model.user.addProspect(newProspect)
                         
                         if !presentedFromCallView {
                             dismiss()
@@ -140,7 +140,7 @@ struct AddProspectView: View {
 struct AddProspectNew_Previews: PreviewProvider {
     static var previews: some View {
         AddProspectView()
-            .environmentObject(SalesPartner(generateTestData: true))
+            .environmentObject(FyeryModel())
     }
 }
 

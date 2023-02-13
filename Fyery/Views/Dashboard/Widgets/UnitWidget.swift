@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UnitWidget: View {
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     
     var body: some View {
         Text("TODO")

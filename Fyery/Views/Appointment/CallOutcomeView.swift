@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CallOutcomeView: View {
     @Environment(\.dismiss) private var dismiss
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     @ObservedObject var prospect: Prospect
     @State private var selection = 0
     @State private var selectedDate = Date()
@@ -36,7 +36,7 @@ struct CallOutcomeView: View {
                         
                         if selection == 4 {
                             let newAppointment = Appointment(type: .analysis, date: selectedDate, participant: prospect)
-                            user.appointments.append(newAppointment)
+                            model.user.appointments.append(newAppointment)
                         }
                         
                         dismiss()

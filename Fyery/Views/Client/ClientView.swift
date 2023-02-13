@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ClientView: View {
-    @EnvironmentObject private var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     
     var body: some View {
         NavigationView {
-            List(user.clients) { client in
+            List(model.user.clients) { client in
                 ClientCellView(client: client)
             }
         }
@@ -23,7 +23,7 @@ struct ClientView_Previews: PreviewProvider {
     
     static var previews: some View {
         ClientView()
-            .environmentObject(SalesPartner(generateTestData: true))
+            .environmentObject(FyeryModel())
     }
 }
 

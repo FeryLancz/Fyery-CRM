@@ -9,9 +9,9 @@ import Foundation
 
 extension SalesPartner {
     convenience init(generateTestData: Bool) {
-        self.init(type: .male, firstName: "Fery", lastName: "Lancz", phoneNumber: "+43 660 4463239", contactor: nil, contactType: .relative)
+        self.init(type: .male, firstName: "Fery", lastName: "Lancz", phoneNumber: "+43 660 4463239")
         if generateTestData {
-            let melina = Prospect(type: .female, firstName: "Melina", lastName: "Winter", phoneNumber: "+43 4024 9789", contactor: self, contactType: .colleague)
+            let melina = Prospect(type: .female, firstName: "Melina", lastName: "Winter", phoneNumber: "+43 4024 9789", contactor: nil, contactType: .colleague)
             let max = Prospect(type: .male, firstName: "Max", lastName: "Lang", phoneNumber: "+43 9301 386419", contactor: melina, contactType: .colleague)
             let elina = Prospect(type: .female, firstName: "Elina", lastName: "Reiter", phoneNumber: "0664 5496354", contactor: melina, contactType: .colleague)
             let maria = Prospect(type: .female, firstName: "Maria", lastName: "Brunner", phoneNumber: "0660 9877600", contactor: max, contactType: .colleague)

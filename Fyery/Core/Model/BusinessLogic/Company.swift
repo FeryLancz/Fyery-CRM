@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Company: String, CaseIterable {
+enum Company: String, CaseIterable, Codable {
     case notSelected = "Gesellschaft wählen"
     case ali = "Allianz"
     case anadi = "Anadi Bank"

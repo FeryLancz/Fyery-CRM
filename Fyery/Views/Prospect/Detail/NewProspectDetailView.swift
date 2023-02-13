@@ -9,9 +9,12 @@ import SwiftUI
 import MapKit
 
 struct NewProspectDetailView: View {
-    @EnvironmentObject var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     @ObservedObject var prospect: Prospect
     @Environment(\.dismiss) var dismiss
+    @Environment(\.scenePhase) var scenePhase
+    
+    private let pattern: [ScenePhase] = [.active, .inactive, .active, .inactive, .background, .inactive, .active]
     
     var body: some View {
         ScrollView(.vertical) {
@@ -28,17 +31,18 @@ struct NewProspectDetailView: View {
                 .padding(.bottom, 15)
             HStack() {
                 RoundedImageButton(title: "Call", systemName: "phone") {
-                    Call.callNumber(prospect.phoneNumber)
+                    Phone.callNumber(prospect.phoneNumber)
                 }
                 RoundedImageButton(title: "Concept", systemName: "folder") { }
                 RoundedImageButton(title: "Event", systemName: "plus") { }
             }
-            PrimarySection(title: "COntact Info") {
+            PrimarySection(title: "Contact Info") {
                 DetailItemView(title: "phone number", systemName: "phone", text: prospect.phoneNumber)
                 if let email = prospect.email {
                     DetailItemView(title: "email-address", systemName: "mail", text: email)
                 }
                 DetailItemView(title: "contact by", systemName: "person", text: prospect.contactType.rawValue + " of " + prospect.contactorFullName)
+                UXPrototypeComment("Embed this Info in header")
             }
             
             if prospect.detailsAvailable {
@@ -59,12 +63,14 @@ struct NewProspectDetailView: View {
                     if let note = prospect.note {
                         DetailItemView(title: "note", systemName: "figure.walk", text: note)
                     }
+                    UXPrototypeComment("clean up view")
                 }
             }
             
             if prospect.addressAvailable {
                 PrimarySection(title: "Address") {
                     HStack(spacing: 0) {
+                        
                         Image(systemName: "mappin.and.ellipse")
                             .foregroundColor(.action)
                             .font(.title2)
@@ -73,6 +79,7 @@ struct NewProspectDetailView: View {
                             NormalText(prospect.street ?? "")
                             NormalText(String(prospect.zip ?? 0) + " " + (prospect.city ?? ""))
                         }
+                        UXPrototypeComment("Insert Map Preview with Button to start navigation")
                         Spacer()
                     }
                     .onTapGesture {
@@ -95,14 +102,14 @@ struct NewProspectDetailView: View {
                 PrimarySection(title: "Concepts") {
                     ScrollView(.vertical) {
                         ForEach(prospect.concepts) { concept in
-                            ConceptCellView(appointment: user.getAppointment(for: concept), concept: concept)
+                            ConceptCellView(appointment: model.user.getAppointment(for: concept), concept: concept)
                         }
                     }
                 }
             }
             
             PrimarySection(title: "Appointments") {
-                let appointments = user.appointments.filter { appointment in
+                let appointments = model.user.appointments.filter { appointment in
                     appointment.participant == prospect
                 }
                 ForEach(appointments) { appointment in
@@ -134,7 +141,7 @@ struct NewProspectDetailView_Previes: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             NewProspectDetailView(prospect: Prospect())
-                .environmentObject(SalesPartner())
+                .environmentObject(FyeryModel())
         }
     }
 }

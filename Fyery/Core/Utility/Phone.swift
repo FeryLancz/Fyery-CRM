@@ -7,13 +7,15 @@
 
 import SwiftUI
 
-final class Call {
+final class Phone {
     static func callNumber(_ number: String) {
         let phone = "tel://"
         let phoneNumberformatted = phone + number.replacingOccurrences(of: " ", with: "")
         guard let url = URL(string: phoneNumberformatted) else {
             return
         }
-        UIApplication.shared.open(url)
+        UIApplication.shared.open(url) { completion in
+            print("call: \(completion)")
+        }
     }
 }

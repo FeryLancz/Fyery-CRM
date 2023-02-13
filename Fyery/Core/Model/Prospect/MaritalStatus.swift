@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MaritalStatus: String, CaseIterable {
+enum MaritalStatus: String, CaseIterable, Codable {
     case notSelected = "select marital status"
     case single
     case relationship

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ContactType: String, CaseIterable {
+enum ContactType: String, CaseIterable, Codable {
     case notSelected = "select contact type"
     case relative
     case friend

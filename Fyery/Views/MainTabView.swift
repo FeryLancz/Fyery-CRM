@@ -42,6 +42,6 @@ struct TabItemView: View {
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView(model: FyeryModel())
-            .environmentObject(SalesPartner(generateTestData: true))
+            .environmentObject(FyeryModel())
     }
 }

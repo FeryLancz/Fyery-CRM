@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ContractDivision: String, CaseIterable {
+enum ContractDivision: String, CaseIterable, Codable {
     case notSelected = "Sparte wählen"
     case bsp =  "Bausparvertrag"
     case bu = "Berufsunfähigkeitsversicherung"

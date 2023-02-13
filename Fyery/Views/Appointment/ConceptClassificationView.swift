@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConceptClassificationView: View {
     @Environment(\.dismiss) private var dismiss
-    @EnvironmentObject private var user: SalesPartner
+    @EnvironmentObject var model: FyeryModel
     @ObservedObject var appointment: Appointment
     
     var body: some View {
@@ -35,7 +35,7 @@ struct ConceptClassificationView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("OK") {
-                    user.closeConsulting(for: appointment.participant, in: appointment)
+                    model.user.closeConsulting(for: appointment.participant, in: appointment)
                     dismiss()
                 }
             }

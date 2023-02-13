@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class Event: Identifiable, ObservableObject {
+class Event: Identifiable, ObservableObject, Codable {
     let type: EventType
     let title: String
     let description: String

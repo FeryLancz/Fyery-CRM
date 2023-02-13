@@ -31,8 +31,12 @@ extension SalesPartner {
         }
     }
     
+    var fullName: String {
+        firstName + " " + lastName
+    }
+    
     var availableContactors: [Prospect] {
-        self.prospects + [self] + self.salesPartners
+        self.prospects
     }
     
     var availableAdvisors: [SalesPartner] {
