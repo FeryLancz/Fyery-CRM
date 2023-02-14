@@ -19,7 +19,6 @@ extension FyeryModel {
         return ref
     }
     
-    
     func stopListening() {
         databasePath?.removeAllObservers()
     }
