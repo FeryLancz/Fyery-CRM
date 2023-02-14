@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var model = FyeryModel()
+    @EnvironmentObject var model: FyeryModel
     
     var body: some View {
         Group {
             if model.firebaseUser == nil  {
-                LoginView(model: model)
+                LoginView()
             } else {
-                MainTabView(model: model)
+                MainTabView()
             }
         }
         .onAppear {

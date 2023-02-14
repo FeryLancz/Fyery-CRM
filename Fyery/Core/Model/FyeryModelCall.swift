@@ -8,15 +8,5 @@
 import SwiftUI
 
 extension FyeryModel {
-    func appScenePhaseChanged(to phase: ScenePhase) {
-        print("phase change")
-    }
     
-    func callNumber(_ number: String, completionHandler completion: () -> Void) {
-        let phoneNumberformatted = "tel://" + number.replacingOccurrences(of: " ", with: "")
-        guard let url = URL(string: phoneNumberformatted) else { return }
-        UIApplication.shared.open(url) { completion in
-            print("call: \(completion)")
-        }
-    }
 }

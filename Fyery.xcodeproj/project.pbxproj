@@ -79,6 +79,9 @@
 		37C47D18299A45E2009345FC /* FyeryModelFirebaseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C47D17299A45E2009345FC /* FyeryModelFirebaseDatabase.swift */; };
 		37C47D1A299A4810009345FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37C47D19299A4810009345FC /* GoogleService-Info.plist */; };
 		37C47D1C299A828D009345FC /* FyeryModelCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C47D1B299A828D009345FC /* FyeryModelCall.swift */; };
+		37C47D1F299ABCA8009345FC /* CallLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C47D1E299ABCA8009345FC /* CallLogView.swift */; };
+		37C47D21299ABCF7009345FC /* CallOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C47D20299ABCF7009345FC /* CallOutcome.swift */; };
+		37C47D23299ABEB7009345FC /* CallType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C47D22299ABEB7009345FC /* CallType.swift */; };
 		37C8F9162997CE3C0032E4B0 /* ConceptState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8F9152997CE3C0032E4B0 /* ConceptState.swift */; };
 		37CC5467298B085C00EF5DAB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CC5466298B085C00EF5DAB /* LoginView.swift */; };
 		37CC5469298B0CD900EF5DAB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CC5468298B0CD900EF5DAB /* MainTabView.swift */; };
@@ -196,6 +199,9 @@
 		37C47D17299A45E2009345FC /* FyeryModelFirebaseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryModelFirebaseDatabase.swift; sourceTree = "<group>"; };
 		37C47D19299A4810009345FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37C47D1B299A828D009345FC /* FyeryModelCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyeryModelCall.swift; sourceTree = "<group>"; };
+		37C47D1E299ABCA8009345FC /* CallLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLogView.swift; sourceTree = "<group>"; };
+		37C47D20299ABCF7009345FC /* CallOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOutcome.swift; sourceTree = "<group>"; };
+		37C47D22299ABEB7009345FC /* CallType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallType.swift; sourceTree = "<group>"; };
 		37C8F9152997CE3C0032E4B0 /* ConceptState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptState.swift; sourceTree = "<group>"; };
 		37CC5466298B085C00EF5DAB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		37CC5468298B0CD900EF5DAB /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -347,6 +353,7 @@
 		377D68E22959C4BF00F26670 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37C47D1D299ABC95009345FC /* CallLog */,
 				377D68D62959C49600F26670 /* ContentView.swift */,
 				37CC5468298B0CD900EF5DAB /* MainTabView.swift */,
 				37CC5465298B084800EF5DAB /* Login */,
@@ -597,6 +604,16 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		37C47D1D299ABC95009345FC /* CallLog */ = {
+			isa = PBXGroup;
+			children = (
+				37C47D1E299ABCA8009345FC /* CallLogView.swift */,
+				37C47D20299ABCF7009345FC /* CallOutcome.swift */,
+				37C47D22299ABEB7009345FC /* CallType.swift */,
+			);
+			path = CallLog;
+			sourceTree = "<group>";
+		};
 		37CC5465298B084800EF5DAB /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -763,6 +780,7 @@
 				37AB73722960211F00544554 /* Proposal.swift in Sources */,
 				37E41F1B299542BA00134B50 /* NumberButton.swift in Sources */,
 				37D9ED212996883B0029C5FB /* EventCellView.swift in Sources */,
+				37C47D1F299ABCA8009345FC /* CallLogView.swift in Sources */,
 				37E41F1D299542DF00134B50 /* CallButton.swift in Sources */,
 				37888EFF2982AD4E004FFA09 /* MaritalStatus.swift in Sources */,
 				37DC642F2986CE4E0044A44B /* SalesPartnerCP.swift in Sources */,
@@ -813,8 +831,10 @@
 				37DC64362986D1120044A44B /* Greeting.swift in Sources */,
 				37E41F25299562F200134B50 /* ExpandableSection.swift in Sources */,
 				37888F192982BDEE004FFA09 /* ProposalType.swift in Sources */,
+				37C47D21299ABCF7009345FC /* CallOutcome.swift in Sources */,
 				370FB3D6295B05D100EBB76C /* UserTestData.swift in Sources */,
 				37888F082982B4CA004FFA09 /* ProspectExtensionHashable.swift in Sources */,
+				37C47D23299ABEB7009345FC /* CallType.swift in Sources */,
 				37DC643A2986DACA0044A44B /* CalendarExtension.swift in Sources */,
 				37930F6D298488A000A5179A /* WidgetContainerView.swift in Sources */,
 				37888F032982AEA5004FFA09 /* ProspectType.swift in Sources */,

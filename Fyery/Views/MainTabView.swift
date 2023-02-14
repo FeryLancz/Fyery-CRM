@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @ObservedObject var model: FyeryModel
+    @EnvironmentObject var model: FyeryModel
     @State private var selection = 0
     var body: some View {
         TabView(selection: $selection) {
@@ -21,7 +21,7 @@ struct MainTabView: View {
             TabItemView(title: "Clients", systemName: "person.3.sequence.fill", idNumber: 2, content: AnyView(ClientView()))
                 .tag(3)
             
-            TabItemView(title: "Account", systemName: "slider.horizontal.2.square.on.square", idNumber: 4, content: AnyView(AccountView(model: model)))
+            TabItemView(title: "Account", systemName: "slider.horizontal.2.square.on.square", idNumber: 4, content: AnyView(AccountView()))
                 .tag(4)
         }
     }
@@ -41,7 +41,7 @@ struct TabItemView: View {
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView(model: FyeryModel())
+        MainTabView()
             .environmentObject(FyeryModel())
     }
 }

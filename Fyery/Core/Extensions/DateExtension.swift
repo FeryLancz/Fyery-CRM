@@ -8,6 +8,11 @@
 import Foundation
 
 extension Date {
+    
+    static var placeholder: Date {
+        Date() + 60*60*24
+    }
+    
     func isInFuture() -> Bool {
         self > Date()
     }

@@ -14,6 +14,8 @@ struct NewProspectDetailView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.scenePhase) var scenePhase
     
+    @State private var callLogShowing = false
+    
     private let pattern: [ScenePhase] = [.active, .inactive, .active, .inactive, .background, .inactive, .active]
     
     var body: some View {
@@ -31,7 +33,9 @@ struct NewProspectDetailView: View {
                 .padding(.bottom, 15)
             HStack() {
                 RoundedImageButton(title: "Call", systemName: "phone") {
-                    Phone.callNumber(prospect.phoneNumber)
+                    model.callNumber(prospect.phoneNumber) {
+                        callLogShowing.toggle()
+                    }
                 }
                 RoundedImageButton(title: "Concept", systemName: "folder") { }
                 RoundedImageButton(title: "Event", systemName: "plus") { }
@@ -118,6 +122,9 @@ struct NewProspectDetailView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $callLogShowing) {
+            CallLogView(callType: .onAppointment)
+        }
     }
 }
 

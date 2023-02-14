@@ -46,7 +46,13 @@ struct CallView: View {
             CallPad(input: $input) {
                 if input.count >= 5 {
                     callPressed = true
-                    Phone.callNumber(input)
+                    model.callNumber(input) {
+                        if numberName != nil {
+                            callOutcomeShowing = true
+                        } else {
+                            addProspectShowing = true
+                        }
+                    }
                 }
             }
             .padding(.bottom, 30)
@@ -57,32 +63,23 @@ struct CallView: View {
         .sheet(isPresented: $callOutcomeShowing) {
             CallOutcomeView(prospect: model.user.prospects.filter { $0.phoneNumber == input }.first!)
         }
-        .onChange(of: scenePhase) { newPhase in
-            //print(newPhase)
-            if callPressed {
-                
-                lastPhases.append(newPhase)
-                let toMatch = Array(lastPhases.suffix(pattern.count))
-                if toMatch == pattern && tabSelection == 2 {
-                    callPressed.toggle()
-                    lastPhases = []
-                    if numberName != nil {
-                        callOutcomeShowing = true
-                    } else {
-                        addProspectShowing = true
-                    }
-                }
-            }
-        }
-        .onAppear {
-            print("on Appear")
-        }
-        .onDisappear {
-            print("on Disappear")
-        }
-        .onChange(of: isPresented) { newVar in
-            print(newVar)
-        }
+        //        .onChange(of: scenePhase) { newPhase in
+        //            //print(newPhase)
+        //            if callPressed {
+        //
+        //                lastPhases.append(newPhase)
+        //                let toMatch = Array(lastPhases.suffix(pattern.count))
+        //                if toMatch == pattern && tabSelection == 2 {
+        //                    callPressed.toggle()
+        //                    lastPhases = []
+        //                    if numberName != nil {
+        //                        callOutcomeShowing = true
+        //                    } else {
+        //                        addProspectShowing = true
+        //                    }
+        //                }
+        //            }
+        //        }
     }
 }
 

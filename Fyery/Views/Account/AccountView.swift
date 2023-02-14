@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct AccountView: View {
-    @ObservedObject var model: FyeryModel
+    @EnvironmentObject var model: FyeryModel
     var body: some View {
-        Button("Logout") {
-            model.signOut()
+        List {
+            Button("Logout") {
+                model.signOut()
+            }
+            Toggle("Call Debug Mode", isOn: $model.callDebugMode)
         }
+        
     }
 }
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(model: FyeryModel())
+        AccountView()
     }
 }

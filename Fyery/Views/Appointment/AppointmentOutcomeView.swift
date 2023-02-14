@@ -66,16 +66,6 @@ struct AppointmentOutcomeView: View {
                     Text("TODO")
                 case .service:
                     Text("TODO")
-                case .interview:
-                    Text("TODO")
-                case .closingMeeting:
-                    Text("TODO")
-                case .approvalMeeting:
-                    Text("TODO")
-                case .careerMeeting:
-                    Text("TODO")
-                case .personal:
-                    Text("TODO")
                 }
             }
             .smallNavigationTitle("Select Outcome")
@@ -107,16 +97,6 @@ struct AppointmentOutcomeView: View {
                         case .customerFolder:
                             break
                         case .service:
-                            break
-                        case .interview:
-                            break
-                        case .closingMeeting:
-                            break
-                        case .approvalMeeting:
-                            break
-                        case .careerMeeting:
-                            break
-                        case .personal:
                             break
                         }
                         dismiss()

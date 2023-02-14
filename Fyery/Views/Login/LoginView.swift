@@ -9,7 +9,7 @@ import SwiftUI
 import LocalAuthentication
 
 struct LoginView: View {
-    @ObservedObject var model: FyeryModel
+    @EnvironmentObject var model: FyeryModel
     @State var email = ""
     @State var password = ""
     
@@ -93,6 +93,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(model: FyeryModel())
+        LoginView()
     }
 }

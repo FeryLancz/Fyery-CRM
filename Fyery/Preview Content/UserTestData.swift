@@ -41,8 +41,7 @@ extension SalesPartner {
             
             let testAppointments = [
                 Appointment(type: .analysis, date: Date()-86400, participant: melina),
-                Appointment(type: .consulting, date: Date()+239101, participant: max),
-                Appointment(type: .interview, date: Date()+120842, participant: jana),
+                Appointment(type: .consulting, date: Date()+239101, participant: max)
             ]
             self.appointments += testAppointments
             self.appointments[1].concept = Concept(test: true)
