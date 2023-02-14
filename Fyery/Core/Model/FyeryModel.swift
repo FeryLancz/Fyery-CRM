@@ -17,7 +17,6 @@ class FyeryModel: ObservableObject {
         didSet { objectWillChange.send() }
     }
     
-    
     // MARK: - Call Detection Logic
     private var callStarted = false
     private var lastPhase: ScenePhase = .background
