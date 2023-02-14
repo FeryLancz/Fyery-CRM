@@ -23,7 +23,7 @@ extension FyeryModel {
         databasePath?.removeAllObservers()
     }
     
-    func postThought() {
+    func writeToDatabase() {
         guard let databasePath = databasePath else { return }
         if user == nil { return }
         do {

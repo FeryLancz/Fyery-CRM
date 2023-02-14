@@ -22,7 +22,7 @@ struct DashboardView: View {
                     .padding(.horizontal, 15)
                 AppointmentMenuItemView(appointmentsToday: $model.user.numberOfAppointmentsToday, appointmentsThisWeek: $model.user.numberOfAppointmentsThisWeek)
                 Button("wirte data") {
-                    model.postThought()
+                    model.writeToDatabase()
                 }
             }
             .refreshable {
